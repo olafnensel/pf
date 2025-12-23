@@ -145,13 +145,24 @@ nav li {
   margin: 0.15rem 0;
 }
 
+/* Stabiler Button: KEIN Inline-Layout mehr */
 .nav-pane button {
   all: unset;
-  display: block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* 🔑 vertikal stabil */
   width: 100%;
   box-sizing: border-box;
 
   padding: 0.35rem 0.6rem;
+  height: 2.4rem;
+  /* 🔑 fix, nicht min-height */
+  font-weight: 400;
+  line-height: 1;
+  /* 🔑 irrelevant durch Flex */
+
+  border: 2px solid transparent;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -168,15 +179,17 @@ nav li {
 /* selektiert (Keyboard / aria-current) */
 .nav-item>button[aria-current="true"] {
   background: rgba(0, 0, 0, 0.06);
-  font-weight: 500;
+  font-weight: 400;
 }
 
-/* aktiv (Inhalt sichtbar) */
+/* Aktives Leaf: NUR Farbe ändern */
 .nav-item.active>button {
   background: #e5efff;
   color: var(--color-accent);
-  font-weight: 600;
-  position: relative;
+
+  /* KEINE Geometrieänderung mehr */
+  font-weight: 400;
+  border-color: currentColor;
 }
 
 /* Marker für aktives Element */
@@ -246,6 +259,7 @@ main {
 
   .nav-item.active>button {
     background: rgba(255, 255, 255, 0.16);
+    border-color: var(--color-accent);
   }
 
   .nav-item.active>button::before {
@@ -283,10 +297,9 @@ body.nav-focus-mode .nav-item.active {
   display: block;
 }
 
-/* Button des aktiven Elements */
-body.nav-focus-mode .nav-item.active>button {
-  display: block;
-  margin-bottom: 0.4rem;
+/* Gleichmäßiger Abstand für alle Nav-Items im SCOPE */
+body.nav-focus-mode .nav-item > button {
+  margin-bottom: 0.4rem; /* Platz ist immer da → kein Umsortieren */
 }
 
 /* Kinder des aktiven Elements */
