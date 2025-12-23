@@ -13,12 +13,12 @@
     <html lang="de">
       <head>
         <meta charset="utf-8" />
-        <title>Pfadfinder 2.0</title>
+        <title>Pfadfinder</title>
         <link rel="stylesheet" href="pfadfinder.css" />
       </head>
-      <body>
+      <body data-dev="true">
 
-        <h1>Pfadfinder 2.0</h1>
+        <h1>Pfadfinder</h1>
 
         <div class="dev-tools">
           <button type="button" class="dev-dark-toggle">
@@ -27,7 +27,7 @@
         </div>
 
         <div class="layout">
-          
+
           <!-- ================= NAVIGATION ================= -->
           <aside class="nav-pane">
 

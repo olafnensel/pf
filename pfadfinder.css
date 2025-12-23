@@ -375,3 +375,13 @@ html.force-light {
 .dev-tools button {
   font-size: 0.85rem;
 }
+
+/* DEV – Visual Debug */
+body[data-dev="true"] .dev-fixed-parent {
+  outline: 2px solid #7aa2f7;
+  outline-offset: -2px;
+}
+
+body[data-dev="true"] .dev-active-leaf {
+  background: rgba(158, 206, 106, 0.2);
+}
