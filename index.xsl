@@ -30,13 +30,25 @@
           
           <!-- ================= NAVIGATION ================= -->
           <aside class="nav-pane">
+
+            <!-- ROOT-Exit: nur einmal -->
+            <div class="nav-root-exit">
+              <button
+                type="button"
+                class="nav-root-button"
+                aria-label="Zurück zur Gesamtübersicht">
+                ← Alle Informationen
+              </button>
+            </div>
+
             <div class="nav-scroll">
               <nav aria-label="Sammlungen">
-                <ul>
+                <ul class="nav-children">
                   <xsl:apply-templates select="collection" mode="nav" />
                 </ul>
               </nav>
             </div>
+
           </aside>
 
           <!-- ================= CONTENT ================= -->

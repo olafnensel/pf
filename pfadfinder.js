@@ -11,22 +11,6 @@ function qsa(selector, root = document) {
 }
 
 /* ===================================================== */
-/* Sichtbarkeitsprüfung */
-/* ===================================================== */
-
-function isFullyVisible(el, container) {
-  if (!el || !container) return true;
-
-  const elRect = el.getBoundingClientRect();
-  const cRect = container.getBoundingClientRect();
-
-  return (
-    elRect.top >= cRect.top &&
-    elRect.bottom <= cRect.bottom
-  );
-}
-
-/* ===================================================== */
 /* Navigation State (ROOT / SCOPE) */
 /* ===================================================== */
 
@@ -38,17 +22,32 @@ const NAV_STATE = {
 let currentNavState = NAV_STATE.ROOT;
 
 /* ===================================================== */
+/* Browser-Fokus-Scroll unterdrücken (KRITISCH) */
+/* ===================================================== */
+
+document.addEventListener('mousedown', e => {
+  const leafBtn = e.target.closest('button[data-col]');
+  if (leafBtn) {
+    e.preventDefault();
+  }
+});
+
+/* ===================================================== */
 /* Navigation – Zustandswechsel */
 /* ===================================================== */
 
 function enterRootMode() {
   currentNavState = NAV_STATE.ROOT;
-
   document.body.classList.remove('nav-focus-mode');
 
-  qsa('.nav-item.is-hidden').forEach(item => {
-    item.classList.remove('is-hidden');
-  });
+  qsa('.nav-item.is-hidden').forEach(item =>
+    item.classList.remove('is-hidden')
+  );
+
+  const navScroll = qs('.nav-scroll');
+  if (navScroll) {
+    navScroll.scrollTop = 0;
+  }
 }
 
 function enterScopeMode(activeItem) {
@@ -66,32 +65,15 @@ function enterScopeMode(activeItem) {
     }
   });
 
-  const scrollContainer = activeItem.closest('.nav-scroll');
-  if (scrollContainer) {
-    activeItem.scrollIntoView({
-      block: 'center',
-      behavior: 'smooth'
-    });
-  }
-}
+  const navScroll = qs('.nav-scroll');
+  if (!navScroll) return;
 
-function updateNavigationScope(activeItem) {
-  if (!activeItem) {
-    enterRootMode();
-    return;
-  }
+  /* Parent als Scroll-Anker */
+  navScroll.scrollTop = parentItem.offsetTop;
 
-  const scrollContainer = activeItem.closest('.nav-scroll');
-  if (!scrollContainer) {
-    enterRootMode();
-    return;
-  }
-
-  if (isFullyVisible(activeItem, scrollContainer)) {
-    enterRootMode();
-    activeItem.scrollIntoView({ block: 'center' });
-  } else {
-    enterScopeMode(activeItem);
+  const parentBtn = parentItem.querySelector('button');
+  if (parentBtn) {
+    parentBtn.focus({ preventScroll: true });
   }
 }
 
@@ -101,7 +83,14 @@ function updateNavigationScope(activeItem) {
 
 document.addEventListener('click', e => {
 
-  /* -------- Parent-Collections (auf/zu) -------- */
+  /* -------- ROOT-Exit -------- */
+  const rootExitBtn = e.target.closest('.nav-root-button');
+  if (rootExitBtn) {
+    enterRootMode();
+    return;
+  }
+
+  /* -------- Parent-Collections -------- */
   const navBtn = e.target.closest('button[data-nav]');
   if (navBtn) {
     const li = navBtn.closest('.nav-item');
@@ -121,26 +110,30 @@ document.addEventListener('click', e => {
     return;
   }
 
-  /* -------- Leaf-Collections -------- */
+  /* -------- Leaf -------- */
   const colBtn = e.target.closest('button[data-col]');
   if (colBtn) {
     const cid = colBtn.getAttribute('data-col');
 
-    qsa('.collection-section.active').forEach(el => el.classList.remove('active'));
+    qsa('.collection-section.active').forEach(el =>
+      el.classList.remove('active')
+    );
 
     const target = document.getElementById(cid);
     if (target) target.classList.add('active');
 
-    qsa('.nav-item.active').forEach(el => el.classList.remove('active'));
+    qsa('.nav-item.active').forEach(el =>
+      el.classList.remove('active')
+    );
 
     const li = colBtn.closest('.nav-item');
     if (li) li.classList.add('active');
 
-    updateNavigationScope(li);
+    enterScopeMode(li);
     return;
   }
 
-  /* -------- Tipp-Text Toggle -------- */
+  /* -------- Tipp -------- */
   const tippBtn = e.target.closest('.tipp-toggle');
   if (tippBtn) {
     const wrapper = tippBtn.closest('.tipp-text');
@@ -150,20 +143,23 @@ document.addEventListener('click', e => {
     return;
   }
 
-  /* -------- Trail Toggle – GLOBAL -------- */
+  /* -------- Trail -------- */
   if (e.target.closest('.trail-toggle-short')) {
     document.body.classList.remove('show-trail-full');
-    qsa('.entry-trail.is-expanded').forEach(el => el.classList.remove('is-expanded'));
+    qsa('.entry-trail.is-expanded').forEach(el =>
+      el.classList.remove('is-expanded')
+    );
     return;
   }
 
   if (e.target.closest('.trail-toggle-full')) {
     document.body.classList.add('show-trail-full');
-    qsa('.entry-trail.is-expanded').forEach(el => el.classList.remove('is-expanded'));
+    qsa('.entry-trail.is-expanded').forEach(el =>
+      el.classList.remove('is-expanded')
+    );
     return;
   }
 
-  /* -------- Trail Toggle – LOKAL -------- */
   const trailToggle = e.target.closest('.trail-expand');
   if (trailToggle) {
     const trail = trailToggle.closest('.entry-trail');
@@ -179,7 +175,7 @@ document.addEventListener('click', e => {
 });
 
 /* ===================================================== */
-/* ESC → zurück zu ROOT */
+/* ESC → ROOT */
 /* ===================================================== */
 
 document.addEventListener('keydown', e => {
@@ -189,59 +185,42 @@ document.addEventListener('keydown', e => {
 });
 
 /* ===================================================== */
-/* STARTLOGIK – nur URL-Parameter */
+/* Startparameter */
 /* ===================================================== */
 
-function getStartLabelFromUrl() {
-  const params = new URLSearchParams(window.location.search);
-  const raw = params.get('start');
-  if (!raw) return null;
-
-  return decodeURIComponent(raw).toLowerCase().replace(/\s+/g, '');
-}
-
 function normalizeLabel(label) {
-  if (!label) return null;
-  return label.toLowerCase().replace(/\s+/g, '');
-}
-
-function openNavPath(navItem) {
-  let current = navItem;
-
-  while (current && current.classList.contains('nav-item')) {
-    current.classList.add('open');
-
-    const btn = current.querySelector('button[data-nav]');
-    if (btn) btn.setAttribute('aria-expanded', 'true');
-
-    current = current.parentElement.closest('.nav-item');
-  }
+  return label ? label.toLowerCase().replace(/\s+/g, '') : null;
 }
 
 (function initFromStartParameter() {
-  const startLabel = getStartLabelFromUrl();
-  if (!startLabel) return;
+  const raw = new URLSearchParams(location.search).get('start');
+  if (!raw) return;
+
+  const start = normalizeLabel(decodeURIComponent(raw));
 
   let navItem = null;
-  let contentSection = null;
+  let content = null;
 
-  qsa('.nav-item[data-label]').forEach(item => {
-    if (normalizeLabel(item.dataset.label) === startLabel) {
-      navItem = item;
-    }
+  qsa('.nav-item[data-label]').forEach(i => {
+    if (normalizeLabel(i.dataset.label) === start) navItem = i;
   });
 
-  qsa('.collection-section[data-label]').forEach(section => {
-    if (normalizeLabel(section.dataset.label) === startLabel) {
-      contentSection = section;
-    }
+  qsa('.collection-section[data-label]').forEach(s => {
+    if (normalizeLabel(s.dataset.label) === start) content = s;
   });
 
-  if (!navItem || !contentSection) return;
+  if (!navItem || !content) return;
 
-  openNavPath(navItem);
+  let cur = navItem;
+  while (cur && cur.classList.contains('nav-item')) {
+    cur.classList.add('open');
+    const btn = cur.querySelector('button[data-nav]');
+    if (btn) btn.setAttribute('aria-expanded', 'true');
+    cur = cur.parentElement.closest('.nav-item');
+  }
+
   navItem.classList.add('active');
-  contentSection.classList.add('active');
+  content.classList.add('active');
 
-  updateNavigationScope(navItem);
+  enterScopeMode(navItem);
 })();

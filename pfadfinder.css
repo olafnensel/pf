@@ -218,7 +218,7 @@ main {
 
 
 /* ========================================================= */
-/* 11. Dark Mode */
+/* 11. Dark Mode (System) */
 /* ========================================================= */
 
 @media (prefers-color-scheme: dark) {
@@ -260,39 +260,118 @@ main {
 
 
 /* ========================================================= */
-/* 12. Navigation – Fokusmodus (Scope: 1 Collection) */
+/* 12. Navigation – Fokusmodus (SCOPE) */
 /* ========================================================= */
 
+/*
+  Grundidee:
+  - Im SCOPE-Modus werden alle nicht relevanten Navigationseinträge ausgeblendet
+  - Sichtbar bleiben:
+    • das aktive nav-item
+    • dessen Button
+    • dessen direkte Children
+  - Es findet KEINE Layout- oder Scroll-Umbau-Logik im CSS statt
+*/
+
+/* Alle ausgeblendeten Einträge entfernen */
 body.nav-focus-mode .nav-pane .nav-item.is-hidden {
   display: none;
 }
 
-body.nav-focus-mode .nav-item.active,
-body.nav-focus-mode .nav-item.active>button,
-body.nav-focus-mode .nav-item.active>.nav-children {
+/* Aktiver Pfad bleibt vollständig sichtbar */
+body.nav-focus-mode .nav-item.active {
   display: block;
 }
 
+/* Button des aktiven Elements */
 body.nav-focus-mode .nav-item.active>button {
+  display: block;
   margin-bottom: 0.4rem;
 }
 
+/* Kinder des aktiven Elements */
 body.nav-focus-mode .nav-item.active>.nav-children {
+  display: block;
   margin-top: 0.2rem;
+}
+
+/* ========================================================= */
+/* 13. ROOT-Exit – Meta-Navigation (nur im SCOPE sichtbar) */
+/* ========================================================= */
+
+/* ROOT-Exit: standardmäßig unsichtbar */
+.nav-root-exit {
+  display: none;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.8rem;
+}
+
+/* Button bewusst unauffällig */
+.nav-root-button {
+  all: unset;
+  cursor: pointer;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.nav-root-button:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* ---------- SCOPE-MODUS ---------- */
+
+body.nav-focus-mode .nav-root-exit {
+  display: block;
+}
+
+/* Navigation wird im SCOPE zweigeteilt */
+body.nav-focus-mode .nav-scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Parent fix sichtbar */
+body.nav-focus-mode .nav-item.active {
+  flex: 0 0 auto;
+}
+
+/* Children bekommen eigenen Scroll */
+body.nav-focus-mode .nav-item.active>.nav-children {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  margin-top: 0.3rem;
+  padding-right: 0.25rem;
 }
 
 
 /* ========================================================= */
-/* 13. Fokusmodus – Kontext-Hinweis */
+/* 14. DEV Dark / Light Mode – manueller Override */
 /* ========================================================= */
 
-body.nav-focus-mode .nav-item.active::before {
-  content: "Alle Informationen";
-  display: block;
+html.force-dark {
+  --color-text: #f5f5f7;
+  --color-muted: #a1a1a6;
+  --color-border: #3a3a3c;
+  --color-bg: #1c1c1e;
+  --color-meta: #6e6e73;
+  --color-accent: #7da6ff;
+}
 
-  font-size: 0.8rem;
-  color: var(--color-muted);
+html.force-light {
+  --color-text: #1d1d1f;
+  --color-muted: #6e6e73;
+  --color-border: #e5e5ea;
+  --color-bg: #ffffff;
+  --color-meta: #8e8e93;
+  --color-accent: #0a58ca;
+}
 
-  padding: 0.25rem 0.4rem;
-  margin-bottom: 0.25rem;
+.dev-tools {
+  padding: 0 1.5rem 0.75rem 1.5rem;
+}
+
+.dev-tools button {
+  font-size: 0.85rem;
 }
