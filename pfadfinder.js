@@ -1,3 +1,23 @@
+/* =====================================================
+   PFADFINDER – NAVIGATION ARCHITEKTUR
+   =====================================================
+
+   Review-Baseline:
+   Commit: "Navigation – mit ROOT Exit"
+
+   Grundprinzipien:
+   - Navigation kennt genau EINEN aktiven Modus:
+     ROOT oder SCOPE
+   - JavaScript verändert NUR Klassen & Attribute
+   - DOM-Struktur wird nicht umgebaut
+   - Alle Klicks laufen über EINEN zentralen Handler
+
+   Patch L0:
+   - reine Struktur- und Dokumentationsschritte
+   - kein neues Verhalten
+   - keine DOM-Änderungen
+===================================================== */
+
 /* ===================================================== */
 /* Helper-Funktionen */
 /* ===================================================== */
