@@ -1,0 +1,3325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collections>
+  <collection label="Gesetze im Internet">
+    <collection label="Gesetze">
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/alttzg_1996/">AtG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/aufenthg_2004/">AufenthG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/a_g/">AÜG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/baf_g/">BAföG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/bgb/">BGB</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/bkgg_1996/">BKGG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/brkg_2005/">BRKG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/bukg_1990/">BUKG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/estg/">EStG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/gg/">GG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/gkg_2004/">GKG</step>
+          <step
+            url="https://www.lsg.nrw.de/infos/Streitwertkatalog/Streitwertkatalog_Maerz_2017.pdf">
+            Streitwertkatalog</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/ifg/">IFG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/inso/">InsO</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/jveg/">JVEG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/kschg/">KSchG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/owig_1968/">OWiG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/rvg/">RVG</step>
+          <step url="http://www.gesetze-im-internet.de/rvg/anlage_1.html">Vergütungsverzeichnis</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_1/">SGB I</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_2/">SGB II</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_3/">SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_4/">SGB IV</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_5/">SGB V</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_6/">SGB VI</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_7/">SGB VII</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_8/">SGB VIII</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_9_2018">SGB IX</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_10/">SGB X</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_11/">SGB XI</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb_12/">SGB XII</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgg/">SGG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/tzbfg/">TzBfG</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/zpo/">ZPO</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/">mehr ...</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Rechtsverordnungen">
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/azav/">AZAV</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://bundesrecht.juris.de/algiiv_2008/">Alg II-V</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/kfzhv/">KfzHV</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/svev/">SvEV</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/sgb3entgruhv/">SGB3EntgRuhV</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/schwbwv/">WVO</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de/">mehr ...</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="EU">
+      <entry>
+        <trail>
+          <step url="https://eur-lex.europa.eu/eli/reg/2004/883/2019-07-31/deu">VO 883/04</step>
+        </trail>
+      </entry>
+      <entry>
+        <trail>
+          <step url="http://eur-lex.europa.eu">mehr ...</step>
+        </trail>
+      </entry>
+    </collection>
+  </collection>
+  <collection label="Weisungen">
+    <collection label="AÜG">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Arbeitnehmerüberlassung - Fachliche Weisungen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Arbeitnehmerueberlassung.aspx">
+            Arbeitnehmerüberlassung</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen / Fachliche Weisungen und Informationen zur Durchführung des
+            Arbeitnehmerüberlassungsgesetzes (AÜG)</step>
+          <step>Fachliche Weisungen</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="BKGG">
+      <entry>
+        <updated>2019-07-30</updated>
+        <title>
+          <main>Kinderzuschlag - § 6a BKGG</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/003/Seiten/Weitere-Rechtsgebiete.aspx">Weitere
+            Rechtsgebiete</step>
+          <step
+            url="http://www.baintranet.de/003/001/Seiten/Startseite-Familienkasse-Direktion.aspx">
+            Familienkasse</step>
+          <step
+            url="http://www.baintranet.de/003/001/007/Seiten/Steuer-und-sozialrechtliches-KG-Weisungen.aspx">
+            Weisungen</step>
+          <step url="http://www.baintranet.de/003/001/007/003/Seiten/durchfuehrungsanweisungen.aspx">
+            Durchführungsanweisungen</step>
+          <step
+            url="https://www.baintranet.de/003/001/007/003/Seiten/durchfuehrungsanweisungen.aspx#da-kiz">
+            DA-KiZ</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-07-30</updated>
+        <title>
+          <main>Sozialrechtliches Kindergeld</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/003/Seiten/Weitere-Rechtsgebiete.aspx">Weitere
+            Rechtsgebiete</step>
+          <step
+            url="http://www.baintranet.de/003/001/Seiten/Startseite-Familienkasse-Direktion.aspx">
+            Familienkasse</step>
+          <step
+            url="http://www.baintranet.de/003/001/007/Seiten/Steuer-und-sozialrechtliches-KG-Weisungen.aspx">
+            Weisungen</step>
+          <step url="http://www.baintranet.de/003/001/007/003/Seiten/durchfuehrungsanweisungen.aspx">
+            Durchführungsanweisungen</step>
+          <step
+            url="https://www.baintranet.de/003/001/007/003/Seiten/durchfuehrungsanweisungen.aspx#da-bkgg">
+            DA-BKGG</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="EhfG">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Entwicklungshelfer-Gesetz - Fachliche Weisungen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 7 – Entwicklungshelfer-Gesetz</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="EStG">
+      <entry>
+        <updated>2019-07-30</updated>
+        <title>
+          <main>Steuerrechtliches Kindergeld</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/003/Seiten/Weitere-Rechtsgebiete.aspx">Weitere
+            Rechtsgebiete</step>
+          <step
+            url="http://www.baintranet.de/003/001/Seiten/Startseite-Familienkasse-Direktion.aspx">
+            Familienkasse</step>
+          <step
+            url="http://www.baintranet.de/003/001/007/Seiten/Steuer-und-sozialrechtliches-KG-Weisungen.aspx">
+            Weisungen</step>
+          <step url="http://www.baintranet.de/003/001/007/003/Seiten/durchfuehrungsanweisungen.aspx">
+            Durchführungsanweisungen</step>
+          <step
+            url="https://www.baintranet.de/003/001/007/003/Seiten/durchfuehrungsanweisungen.aspx#da-kg-g-ltig-ab-01-07-2014-">
+            DA-KG</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="IFG">
+      <entry>
+        <updated>2019-07-29</updated>
+        <title>
+          <main>Informationsfreiheitsgesetz - Durchführungsanweisungen</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/005/Seiten/Geschaeftsfuehrung.aspx">Geschäftsführung</step>
+          <step url="https://www.baintranet.de/005/013/Seiten/vorstand.aspx">Vorstand</step>
+          <step url="https://www.baintranet.de/005/013/002/Seiten/Ansprechpartner-RCE.aspx">RCE –
+            Recht / Compliance / Enterprise Fraud Management</step>
+          <step url="https://www.baintranet.de/005/013/002/Seiten/Informationsfreiheitsgesetz.aspx">
+            Informationsfreiheitsgesetz</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="IfSG">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Infektionsschutzgesetz - Weisungen</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step>Suche</step>
+          <step
+            url="https://www.baintranet.de/Seiten/Corona/Regelungen/Weisungen-Informationen-CORONA.aspx">Weisungen
+            Corona</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="KSchG">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Kündigungsschutzgesetz - Fachliche Weisung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Massenentlassungsanzeigen.aspx">
+            Massenentlassungen</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisungen Dritter und Vierter Abschnitt...</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="OWiG">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Gesetz über Ordnungswidrigkeiten - Fachliche Weisungen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step url="https://content.baintranet.de/zentral/9053/SitePages/OWi.aspx">Ordnungswidrigkeiten
+            / Leistungsmissbrauch</step>
+          <step>SGB III</step>
+          <step url="https://content.baintranet.de/zentral/9053/SitePages/OWi-SGBIII.aspx">OWi SGB
+            III</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SekG">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Sekundierungsgesetz - Fachliche Weisungen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 6 - Sekundierungsgesetz</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB I">
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§§ 14, 16, 36, 42, 46, 48, 49, 51, 52, 53, 54, 60 - 67 ff. - Fachliche Weisungen SGB
+            I</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step url="https://content.baintranet.de/zentral/9053/SitePages/SGB-I-SGB-X.aspx">Grundsatzfragen
+            SGB I und SGB X sowie fachübergreifende Normen SGB III</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB I</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 35 ff. Sozialgeheimnis</main>
+          <sub>Datenschutzbestimmungen (DatBest)</sub>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/005/Seiten/Geschaeftsfuehrung.aspx">Geschäftsführung</step>
+          <step url="https://www.baintranet.de/005/013/Seiten/vorstand.aspx">Vorstand</step>
+          <step url="https://www.baintranet.de/005/013/006/Seiten/VF3-Datenschutzbeauftragter.aspx">
+            Datenschutz</step>
+          <step url="https://www.baintranet.de/008/013/006/004/Documents/DatBest.pdf">Datenschutzbestimmungen
+            (DatBest)</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 44 Verzinsung</main>
+          <sub>Durchführungsanweisungen, Stand: 12/2001</sub>
+        </title>
+        <trail>
+          <step>Agenturablage Kiel</step>
+          <step url="docs/dasgbi44.pdf">DA § 44 SGB I</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB II">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Fachliche Weisungen, Informationen, ...</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9058/SitePages/Buergergeld.aspx">
+            Bürgergeld</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB III" pf-start="true">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 9a - Zusammenarbeit mit den ... [Leistungsträgern SGB II]</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 3 – § 9a SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-10-07</updated>
+        <title>
+          <main>§§ 19 ff. - Förderung der Teilhabe am Arbeitsleben</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Rehabilitanden.aspx">
+            Rehabilitanden</step>
+          <step>Rehabilitationsprozess</step>
+          <step
+            url="https://content.baintranet.de/zentral/9030/SitePages/Gesetze-Weisungen-Fachliche-Weisungen.aspx">Gesetze,
+            Weisungen, Fachliche Weisungen, Informationen, HEGA, ...</step>
+          <step>Fachliche Weisunge</step>
+          <step
+            url="https://content.baintranet.de/zentral/9030/SitePages/Fachliche-Weisungen-Rehabilitation-Schwerbehinderung-SGBIII.aspx">Fachliche
+            Weisungen Reha/SB SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 24 - Versicherungspflichtverhältnis</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 24 SGB III - Versicherungspflichtverhältnis</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 25 - Beschäftigte</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 25 SGB III - Beschäftigte</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 26 - Sonstige Versicherungspflichtige</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 26 SGB III - Sonstige Versicherungspflichtige</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 27 - Versicherungsfreie Beschäftigte</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 27 SGB III - Versicherungsfreie Beschäftigte</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 28 - Sonstige versicherungsfreie Personen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 28 SGB III - Sonstige versicherungsfreie Personen</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 28a - Antragspflichtversicherung in der Arbeitslosenversicherung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>3. Freiwillige Arbeitslosenversicherung</step>
+          <step>3.1. Fachliche Weisungen und FAQ zur Antragspflichtversicherung</step>
+          <step>Fachliche Weisung zur Antragspflichtversicherung § 28a SGB</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 38 Abs. 1 - Frühzeitige Arbeitsuche</main>
+          <sub>Leitfaden zur frühzeitigen Arbeitsuchendmeldung</sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Arbeitssuchende.aspx">
+            Arbeitssuchende</step>
+          <step
+            url="https://content.baintranet.de/zentral/9062/SitePages/Beratungs-und-Vermittlungsschwerpunkte.aspx">Beratungs-
+            und Vermittlungsschwerpunkte</step>
+          <step
+            url="https://content.baintranet.de/zentral/9062/SitePages/Vermittlung-und-Beratung-von-Arbeitsuchenden.aspx">Vermittlung
+            und Beratung von Arbeitsuchenden</step>
+          <step
+            url="https://content.baintranet.de/zentral/9062/SitePages/Personengruppen-SGBIII.aspx">Personengruppen
+            SGB III</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Frühzeitige Integrationsaktivitäten: Job to Job</step>
+          <step>Leitfaden: Frühzeitige Integrationsaktivitäten in der ...</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 44 - Vermittlungsbudget</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Aktivierung_und_berufliche_Eingliederung.aspx">Aktivierung
+            und berufliche Eingliederung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Vermittlungsbudget.aspx">VB
+            - Vermittlungsbudget</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen</step>
+          <step>Rechtskreis SGB III</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisungen Vermittlungsbudget SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 45 - Maßnahmen bei einem Arbeitgeber (MAG)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Aktivierung_und_berufliche_Eingliederung.aspx">Aktivierung
+            und berufliche Eingliederung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Massnahmen-bei-einem-Arbeitgeber.aspx">MAG
+            - Maßnahmen bei einem Ar...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung SGB III</step>
+          <step>Fachliche Weisungen für Maßnahmen bei einem Arbeitgeber</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 45 - Maßnahmen bei einem Träger (MAT)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Aktivierung_und_berufliche_Eingliederung.aspx">Aktivierung
+            und berufliche Eingliederung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Massnahmen-bei-einem-Arbeitgeber.aspx">AhfJ
+            - Aktivierungshilfen für Jünge...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung SGB III</step>
+          <step>Fachliche Weisung - Maßnahmen bei einem Träger (MAT) nach § 45 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 45 - Maßnahmen bei einem Träger (private Arbeitsvermittlung - MPAV)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Aktivierung_und_berufliche_Eingliederung.aspx">Aktivierung
+            und berufliche Eingliederung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aktivierung_und_berufliche_Eingliederung/Massnahmen-bei-einem-Arbeitgeber.aspx">MPAV
+            - Maßnahme bei einem Träg...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisung SGB III</step>
+          <step>Fachliche Weisung SGB III</step>
+          <step>Fachliche Weisungen - AVGS MPAV nach § 45 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 46 Absatz 1 - Probebeschäftigung für behinderte Menschen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Rehabilitation.aspx">
+            Rehabilitation</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Rehaspezifische Fördermöglichkeiten</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Rehaspezifische_Foerderung/Leistungen_an_Arbeitgeber.aspx">Leistungen
+            an Arbeitgeber</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Probebeschäftigung (PB/PB-SB)</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 46 Absatz 2 - Arbeitshilfen für behinderte Menschen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Rehabilitation.aspx">
+            Rehabilitation</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Rehaspezifische Fördermöglichkeiten</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Rehaspezifische_Foerderung/Leistungen_an_Arbeitgeber.aspx">Leistungen
+            an Arbeitgeber</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Arbeitshilfen im Betrieb</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 48 - Berufsorientierungsmaßnahmen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierung_und_Berufsvorbereitung.aspx">Berufsorientierung
+            und -vorbereitung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierungsmassnahmen.aspx">BOM
+            - Berufsorientierungsmaßna...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+          <step>Fachliche Weisung BOM</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 48a - Berufsorientierungspraktikum</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierung_und_Berufsvorbereitung.aspx">Berufsorientierung
+            und -vorbereitung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierungsmassnahmen.aspx">BOP
+            - Berufsorientierungspraktiku...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+          <step>Fachliche Weisung – Berufsorientierungspraktikum</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 49 - Berufseinstiegsbegleitung (BerEb)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierung_und_Berufsvorbereitung.aspx">Berufsorientierung
+            und -vorbereitung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufseinstiegsbegleitung.aspx">BerEb
+            - Berufseinstiegsbegleitung</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+          <step>Fachliche Weisungen Berufseinstiegsbegleitung (BerEb)</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 51 - Berufsvorbereitende Bildungsmaßnahmen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierung_und_Berufsvorbereitung.aspx">Berufsorientierung
+            und -vorbereitung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufseinstiegsbegleitung.aspx">BvB
+            - Berufsvorbereitende-Bildungsmass...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 54a - Einstiegsqualifizierung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierung_und_Berufsvorbereitung.aspx">Berufsorientierung
+            und -vorbereitung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Einstiegsqualifizierung.aspx">Einstiegsqualifizierung
+            (EQ)</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+          <step>Fachliche Weisung Einstiegsqulifizierung</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 56 - 72 - Berufsausbildungsbeihilfe (BAB)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsausbildung/Berufsausbildung.aspx">Fördermöglichkeiten
+            in der...</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsausbildung/Berufsausbildungsbeihilfe.aspx">Berufsausbildungsbeihilfe
+            (BAB)</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsausbildung/Berufsausbildungsbeihilfe_Fachliche-Weisungen.aspx">Fachliche
+            Weisungen</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 73 - Zuschüsse zur Ausbildungsvergütung behinderter und schwerbehinderter Menschen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Rehabilitation.aspx">
+            Rehabilitation</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Rehaspezifische Fördermöglichkeiten</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Rehaspezifische_Foerderung/Leistungen_an_Arbeitgeber.aspx">Leistungen
+            an Arbeitgeber</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Zuschuss zur Ausbildungsvergütung (AZ/AZ-SB)</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 74 - 75a - Assistierte Ausbildung (AsA)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsausbildung/Berufsausbildung.aspx">Fördermöglichkeiten
+            in der ...</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsausbildung/Assistierte-Ausbildung.aspx">AsA
+            - Assistierte Ausbildung</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisungen für Außerbetriebliche Berufsausbildung (BaE)</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 76 - Außerbetriebliche Berufsausbildung (BaE)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsausbildung/Berufsausbildung.aspx">Fördermöglichkeiten
+            in der ...</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsausbildung/Ausserbetriebliche-Berufsausbildung.aspx">BaE
+            - Außerbetriebliche Berufsaus...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisungen für Außerbetriebliche Berufsausbildung (BaE)</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 81 - Förderung beruflicher Weiterbildung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 82 - Förderung beschäftigter Arbeitnehmerinnen und Arbeitnehmer [Weiterbildung
+            Geringqualifizierter und beschäftigter älterer Arbeitnehmer in Unternehmen (WeGebAU)]</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 83 - Förderung beruflicher Weiterbildung: Weiterbildungskosten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 84 - Förderung beruflicher Weiterbildung: Lehrgangskosten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 85 - Förderung beruflicher Weiterbildung: Fahrkosten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 86 - Förderung beruflicher Weiterbildung: Unterbringung und Verpflegung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 87 - Förderung beruflicher Weiterbildung: Kinderbetreuungskosten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 87a - Förderung beruflicher Weiterbildung: Weiterbildungsprämie und
+            Weiterbildungsgeld</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 88 - 92 - Eingliederungszuschuss (EGZ)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aufnahme_einer_Beschaeftigung/Aufnahme_einer_Beschaeftigung.aspx">Aufnahme
+            einer Beschäftigung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aufnahme_einer_Beschaeftigung/Eingliederungszuschuss.aspx">Eingliederungszuschuss
+            (EGZ)</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+          <step>FW zum Eingliederungszuschuss (FW EGZ) §§ 88 - 92 SGB III</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2019-08-12</updated>
+        <title>
+          <main>§ 93 - Gründungszuschuss (GZ)</main>
+          <sub>Geschäftsanweisungen (GA)</sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aufnahme_einer_selbststaendigen_Taetigkeit/Aufnahme_einer_selbstaendigen_Taetigkeit.aspx">Aufnahme
+            einer selbständigen Tätigkeit</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Aufnahme_einer_selbststaendigen_Taetigkeit/Gruendungszuschuss.aspx">Gründungszuschuss
+            (GZ)</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+          <step>Fachliche Weisung zum Gründungszuschuss (FW GZ)</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-11-25</updated>
+        <title>
+          <main>§§ 95 ff. - Kurzarbeitergeld</main>
+          <sub>Weisungen</sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9047/SitePages/Arbeitgeberbezogene-Geldleistungen.aspx">Arbeitgeberbezogene
+            Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9047/SitePages/Kurzarbeitergeld.aspx">
+            Kurzarbeitergeld</step>
+          <step>Fachliche Weisung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-25</updated>
+        <title>
+          <main>§§ 101 ff. - Saison-Kurzarbeitergeld und ergänzende Leistungen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9047/SitePages/Arbeitgeberbezogene-Geldleistungen.aspx">Arbeitgeberbezogene
+            Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9047/SitePages/Saison-Kurzarbeitergeld-und-ergaenzende-Leistungen.aspx?">Saison-Kurzarbeitergeld
+            und ergänzende Leistungen</step>
+          <step>Fachliche Weisung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-25</updated>
+        <title>
+          <main>§§ 110, 111 - Transferkurzarbeitergeld und ergänzende Leistungen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9047/SitePages/Arbeitgeberbezogene-Geldleistungen.aspx">Arbeitgeberbezogene
+            Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9047/SitePages/Transferleistungen.aspx">Transferkurzarbeitergeld
+            und ergänzende Leistungen</step>
+          <step>Fachliche Weisung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 111a - Förderung der beruflichen Weiterbildung bei Transferkurzarbeitergeld</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung-beruflicher-Weiterbildung_Ergaenzende-Informationen.aspx">Förderung
+            beruflicher Weiterbildung - Ergänzende Informationen</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>§ 111a Förderung der beruflichen Weiterbildung bei Transferkurzarbeitergeld</step>
+          <step>FbW - Beschäftigte Anspruch Transferkurzarbeitergeld § 111a SGB III</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-10-07</updated>
+        <title>
+          <main>§§ 112 ff. - Förderung der Teilhabe am Arbeitsleben</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Rehabilitanden.aspx">
+            Rehabilitanden</step>
+          <step>Rehabilitationsprozess</step>
+          <step
+            url="https://content.baintranet.de/zentral/9030/SitePages/Gesetze-Weisungen-Fachliche-Weisungen.aspx">Gesetze,
+            Weisungen, Fachliche Weisungen, Informationen, HEGA, ...</step>
+          <step>Fachliche Weisunge</step>
+          <step
+            url="https://content.baintranet.de/zentral/9030/SitePages/Fachliche-Weisungen-Rehabilitation-Schwerbehinderung-SGBIII.aspx">Fachliche
+            Weisungen Reha/SB SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 131a - Sonderregelungen zur beruflichen Weiterbildung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-11-25</updated>
+        <title>
+          <main>§§ 136 ff. - Arbeitslosengeld</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+        </trail>
+      </entry>
+      <entry vi="true">
+        <updated>2025-11-25</updated>
+        <title>
+          <main>§§ 165 ff. - Insolvenzgeld</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9047/SitePages/Arbeitgeberbezogene-Geldleistungen.aspx">Arbeitgeberbezogene
+            Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9047/SitePages/Insolvenzgeld.aspx">
+            Insolvenzgeld</step>
+          <step>Fachliche Weisung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 174 - Übernahme von Beiträgen bei Befreiung von der Versicherungspflicht in der
+            Kranken- und Pflegeversicherung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Beiträge private</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2022-06-29</updated>
+        <title>
+          <main>§ 177 Absatz 5 - Zulassung im Einzelfall</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-12</updated>
+        <title>
+          <main>§ 178 - Träger- und Maßnahmezulassung: Berufliche Weiterbildung; Akkreditierung /
+            Zulassung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Akkreditierung_Zulassung/Akkreditierung_und_Zulassung.aspx">Akkreditierung
+            und Zulassung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2022-06-29</updated>
+        <title>
+          <main>§ 180 - Ergänzende Anforderungen an Maßnahmen der beruflichen Weiterbildung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2022-06-29</updated>
+        <title>
+          <main>§ 183 - Qualitätsprüfung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Foerderung_der_beruflichen_Weiterbildung.aspx">Förderung
+            der beruflichen Weiterbildung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung_der_beruflichen_Weiterbildung/Arbeitslose-und-Beschaeftigte.aspx">Förderung
+            beruflicher Weiterbildung (FbW) Arbeitsloser und Beschäftigter</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisung für die Förderung der beruflichen Weiterbildung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 310 - Meldepflicht bei Wechsel der Zuständigkeit</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 1a - §§ 310, 327 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 312 - Arbeitsbescheinigung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 2 – §§ 312, 312a, 313, 313a SGB III - Arbeitgeber- und ...</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 312a - Arbeitsbescheinigung für Zwecke des über- und zwischenstaatlichen Rechts</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 2 – §§ 312, 312a, 313, 313a SGB III - Arbeitgeber- und ...</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 313 - Nebeneinkommensbescheinigung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 2 – §§ 312, 312a, 313, 313a SGB III - Arbeitgeber- und ...</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 313a - Bescheinigungsverfahren</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 2 – §§ 312, 312a, 313, 313a SGB III - Arbeitgeber- und ...</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 315 - Allgemeine Auskunftspflicht Dritter</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB III</step>
+          <step>Geschäftsanweisung zu § 315 SGB III - Allgemeine Auskunftspflicht Dritter</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 319 - Mitwirkungs- und Duldungspflichten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB III</step>
+          <step>Geschäftsanweisung zu §319 SGB III - Mitwirkungs- und Duldungspflichten</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 321 - Schadensersatz</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB III</step>
+          <step>Geschäftsanweisung zu § 321 SGB III - Ansprüche gegen ...</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 323 - Antragserfordernis</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 1b – §§ 323-325 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 324 - Antrag vor Leistung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 1b – §§ 323-325 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 325 - Wirkung des Antrages</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 1b – §§ 323-325 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-25</updated>
+        <title>
+          <main>§ 327 - Zuständigkeit</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 1a - §§ 310, 327 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-25</updated>
+        <title>
+          <main>§ 328 - Vorläufige Entscheidung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB III</step>
+          <step>Geschäftsanweisung zu § 328 SGB III - Vorläufige Entscheidung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-25</updated>
+        <title>
+          <main>§ 330 - Sonderregelungen für die Aufhebung von Verwaltungsakten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB III</step>
+          <step>Fachliche Weisungen zu § 330 SGB III - Sonderregelungen für die ...</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-25</updated>
+        <title>
+          <main>§ 331 - Vorläufige Zahlungseinstellung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB III</step>
+          <step>Geschäftsanweisung zu § 331 SGB III - Vorläufige Zahlungseinstellung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 335 - Erstattung von Beiträgen zur Kranken-, Renten- und Pflegeversicherung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Beiträge private, Beitragsersatz</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 336 - Leistungsrechtliche Bindung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 336 SGB III - Leistungsrechtliche Bindung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 337 - Auszahlung im Regelfall</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB III</step>
+          <step>Fachliche Weisungen zu § 337 SGB III - Auszahlung im Regelfall</step>
+          <step>Anlage 1 zu den Fachlichen Weisungen § 337 SGB III</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 351 - Beitragserstattung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 351 SGB III - Beitragserstattung</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB IV">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 3 bis 6 - Aus- und Einstrahlung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§§ 3 bis 6 SGB IV - Aus- und Einstrahlung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 7 - Beschäftigung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 25 SGB III - Beschäftigte</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 7a - Antragsverfahren zur Feststellung einer Beschäftigung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 24 SGB III - Versicherungspflichtverhältnis</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 8 - Geringfügige Beschäftigung und geringfügige selbständige Tätigkeit;
+            Geringfügigkeitsgrenze</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 27 SGB III - Versicherungsfreie Beschäftigte</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 8a - Geringfügige Beschäftigung in Privathaushalten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 27 SGB III - Versicherungsfreie Beschäftigte</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 14 - Arbeitsentgelt</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§ 25 SGB III - Beschäftigte</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 27, 28 - Verzinsung und Verjährung von Beitragserstattungsansprüchen</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>2. Versicherungspflicht/Versicherungsfreiheit</step>
+          <step>2.1. Aktuelle Fachliche Weisungen Arbeitslosenversicherung</step>
+          <step>§§ 27 bis 28 SGB IV - Verzinsung und Verjährung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 28a - Meldepflicht</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Meldungen/Bescheinigungen</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 223, 232a - Fälligkeit, Verjährung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Beiträge gesetzliche</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB V">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 5, 6, 8, 19, 186, 190 und 191 - Sozialversicherung der Leistungsempfänger</main>
+          <sub>Kranken- und Pflegeversicherung</sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Versicherungspflicht zur gesetzlichen KV/PV</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 175 - Ausübung des Wahlrechts</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Zuständige Krankenkasse</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 176 - Bestandschutzregelung für Solidargemeinschaften</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Beiträge private</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 223, 232a, 241, 242, 242a, 251, 252 - Beiträge</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Beiträge gesetzliche</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 257 - Beitragszuschüsse für Beschäftigte</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Beiträge private</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB VI">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 1, 3, 4, 5, 6, 7, 8, 56, 231, 231a - Versicherungspflicht</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.2. Fachliche Weisungen: Rentenversicherung</step>
+          <step>Versicherungspflicht</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 58 - Meldung Anrechnungszeiten</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.2. Fachliche Weisungen: Rentenversicherung</step>
+          <step>Meldungen</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 126, 133, 134, 136, - Zuständiger RV-Zweig</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.2. Fachliche Weisungen: Rentenversicherung</step>
+          <step>Zuständiger RV-Zweig</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 5, 123, 157, 159, 160, 163, 166, 170, 228a - Beiträge gesetzliche</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.2. Fachliche Weisungen: Rentenversicherung</step>
+          <step>Beiträge gesetzliche</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 173, 228a - Beiträge private/freiwillige</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.2. Fachliche Weisungen: Rentenversicherung</step>
+          <step>Beiträge private/freiwillige</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2020-02-19</updated>
+        <title>
+          <main>rvRecht</main>
+          <sub>Rechtsportal der Deutschen Rentenversicherung</sub>
+        </title>
+        <trail>
+          <step url="https://rvrecht.deutsche-rentenversicherung.de/DE/Home/home_node.html">
+            https://rvrecht.deutsche-rentenversicherung.de/...</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB VII">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§ 2 - Sozialversicherung der Leistungsempfänger</main>
+          <sub>Unfallversicherung </sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>4. Sozialversicherungspflicht – Unfallversicherung</step>
+          <step>Geschäftsanweisungen § 2 SGB VII</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB IX">
+      <entry>
+        <updated>2025-10-07</updated>
+        <title>
+          <main>SGB IX - Förderung der Teilhabe am Arbeitsleben</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Rehabilitanden.aspx">
+            Rehabilitanden</step>
+          <step>Rehabilitationsprozess</step>
+          <step
+            url="https://content.baintranet.de/zentral/9030/SitePages/Gesetze-Weisungen-Fachliche-Weisungen.aspx">Gesetze,
+            Weisungen, Fachliche Weisungen, Informationen, HEGA, ...</step>
+          <step>Fachliche Weisunge</step>
+          <step
+            url="https://content.baintranet.de/zentral/9030/SitePages/Fachliche-Weisungen-Rehabilitation-Schwerbehinderung-SGBIX.aspx">Fachliche
+            Weisungen Reha/SB SGB IX</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB X">
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 25 Akteneinsicht durch Beteiligte</main>
+          <sub>Durchführungsanweisungen, Stand: 12/2001</sub>
+        </title>
+        <trail>
+          <step>Agenturablage Kiel</step>
+          <step url="docs/dasgbx25.pdf">DA § 25 SGB X</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 35 ff. Sozialgeheimnis</main>
+          <sub>Datenschutzbestimmungen (DatBest)</sub>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/005/Seiten/Geschaeftsfuehrung.aspx">Geschäftsführung</step>
+          <step url="https://www.baintranet.de/005/013/Seiten/vorstand.aspx">Vorstand</step>
+          <step url="https://www.baintranet.de/005/013/006/Seiten/VF3-Datenschutzbeauftragter.aspx">
+            Datenschutz</step>
+          <step url="https://www.baintranet.de/008/013/006/004/Documents/DatBest.pdf">Datenschutzbestimmungen
+            (DatBest)</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§§ 44, 45, 48, 50, 52 - Aufhebung und Erstattung</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step url="https://content.baintranet.de/zentral/9053/SitePages/SGB-I-SGB-X.aspx">Grundsatzfragen
+            SGB I und SGB X sowie fachübergreifende Normen SGB III</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB X</step>
+          <step>Aufhebung und Erstattung</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 51 Rückgabe von Urkunden und Sachen</main>
+          <sub>Durchführungsanweisungen, Stand: 12/2001</sub>
+        </title>
+        <trail>
+          <step>Agenturablage Kiel</step>
+          <step url="docs/dasgbx51.pdf">DA § 51 SGB X</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§§ 102 ff. - Erstattungsansprüche zwischen Sozialleistungsträgern</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step url="https://content.baintranet.de/zentral/9053/SitePages/SGB-I-SGB-X.aspx">Grundsatzfragen
+            SGB I und SGB X sowie fachübergreifende Normen SGB III</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen SGB X</step>
+          <step>Erstattungsansprüche zwischen Sozialleistungsträgern</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>§ 116 - Ansprüche gegen Schadensersatzpflichtige</main>
+          <sub>Regress</sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step url="https://content.baintranet.de/zentral/9053/SitePages/Regress.aspx">Regress –
+            Durchsetzung von auf die BA übergegangenen zivilrechtlichen Schadenersatzansprüchen gem.
+            § 116 SGB X</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Informationen</step>
+          <step>Fachliche Weisungen zu § 116 SGB X</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGB XI">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 22 und 23 - Sozialversicherung der Leistungsempfänger</main>
+          <sub>Kranken- und Pflegeversicherung</sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Versicherungspflicht zur gesetzlichen KV/PV</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>§§ 55, 59, 60 - Beiträge</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Sozialversicherung.aspx">Sozialversicherung,
+            Versicherungspflicht, APV</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>1. Sozialversicherung der Leistungsempfänger</step>
+          <step>1.1. Fachliche Weisungen: Kranken- und Pflegeversicherung</step>
+          <step>Beiträge gesetzliche</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SGG">
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>Rechtsbehelfsverfahren SGB III</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Rechtsbehelfsverfahren-SGB-III.aspx">Rechtsbehelfsverfahren
+            SGB III</step>
+          <step>Weisungen und Ähnliches</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisungen für Angelegenheiten nach dem ...</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="SVG">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>Soldatenversorgungsgesetz - § 86a</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Regelungen-zum-Arbeitslosengeld.aspx">Regelungen
+            zum Arbeitslosengeld</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Anhänge</step>
+          <step>Anhang 5 – Soldatenversorgungsgesetz (SVG)</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Sonderprogramme">
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>Bundesprogramm 'Ausbildungsplätze sichern' (APS)</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Beschaeftigte.aspx">
+            Beschäftigte</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufsorientierung_und_Berufsvorbereitung.aspx">Berufsorientierung
+            und -vorbereitung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Berufsorientierung_und_Berufsvorbereitung/Berufseinstiegsbegleitung.aspx">APS
+            - Bundesprogramm "Ausbildu...</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+          <step>Fachliche Weisung</step>
+          <step>Fachliche Weisung Bundesprogramm 'Ausbildungsplätze sichern</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Internationales Recht">
+      <entry>
+        <updated>2025-12-15</updated>
+        <title>
+          <main>VO 883/04</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step url="https://content.baintranet.de/zentral/9054/SitePages/Arbeitslosengeld.aspx">
+            Arbeitslosengeld</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Internationales-Recht.aspx">Internationales
+            Recht (Leistung Alg)</step>
+          <step
+            url="https://content.baintranet.de/zentral/9054/SitePages/Fachliche-Weisungen-Weisungen-und-Informationen-Internationales-Recht.aspx">Fachliche
+            Weisungen, Weisungen ...</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-15</updated>
+        <title>
+          <main>Europäischer Sozialfonds</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Sonstige_Leistungen_und_Programme/Sonstige_Leistungen_und_Programme.aspx">Sonstige
+            Leistungen und Programme</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Sonstige_Leistungen_und_Programme/Europaeischer-Sozialfonds.aspx">Europäischer
+            Sozialfonds</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-15</updated>
+        <title>
+          <main>Europäischer Globalisierungsfonds</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step url="https://content.baintranet.de/zentral/9045/SitePages/Foerderung.aspx">Förderung</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Sonstige_Leistungen_und_Programme/Sonstige_Leistungen_und_Programme.aspx">Sonstige
+            Leistungen und Programme</step>
+          <step
+            url="https://content.baintranet.de/zentral/9045/SitePages/Sonstige_Leistungen_und_Programme/Europaeischer-Globalisierungsfonds.aspx">Europäischer
+            Globalisierungsfonds</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Weisungen und Gesetze</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Sammlungen">
+      <entry>
+        <updated>2025-11-05</updated>
+        <title>
+          <main>Weisungen</main>
+          <sub>Weisungen und Informationen</sub>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de/SitePages/Start.aspx">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step>Über uns</step>
+          <step url="https://content.baintranet.de/regelungen/SitePages/Regelungen.aspx">Regelungen</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-15</updated>
+        <title>
+          <main>Weisungen</main>
+          <sub>bis 2003</sub>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/009/Seiten/Arbeitsmittel.aspx">Arbeitsmittel</step>
+          <step url="https://www.baintranet.de/009/Seiten/Weisungen-bis-2003.aspx">Weisungen bis
+            2003</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-15</updated>
+        <title>
+          <main>Weisungen</main>
+          <sub>veröffentlicht im Internet</sub>
+        </title>
+        <trail>
+          <step url="https://www.arbeitsagentur.de/">www.arbeitsagentur.de</step>
+          <step url="https://www.arbeitsagentur.de/ueber-uns">Über uns</step>
+          <step url="https://www.arbeitsagentur.de/veroeffentlichungen/veroeffentlichungen">Unsere
+            Veröffentlichungen</step>
+          <step>Rechtliche Grundlagen</step>
+          <step>Weisungen</step>
+          <step url="https://www.arbeitsagentur.de/veroeffentlichungen/gesetze-und-weisungen">Weisungssammlungen
+            nach Norm</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2020-02-19</updated>
+        <title>
+          <main>rvRecht</main>
+          <sub>Rechtsportal der Deutschen Rentenversicherung</sub>
+        </title>
+        <trail>
+          <step url="https://rvrecht.deutsche-rentenversicherung.de/DE/Home/home_node.html">
+            https://rvrecht.deutsche-rentenversicherung.de/...</step>
+        </trail>
+      </entry>
+    </collection>
+  </collection>
+  <collection label="Gedrucktes">
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>Vordrucke</main>
+        <sub>Im Internet</sub>
+      </title>
+      <trail>
+        <step url="http://www.arbeitsagentur.de">www.arbeitsagentur.de</step>
+        <step>Merkblätter und Formulare</step>
+        <step url="https://www.arbeitsagentur.de/download-center">Download-Center</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>Merkblätter der BA</main>
+        <sub>aktuelle Merkblätter</sub>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/009/Seiten/Arbeitsmittel.aspx">Arbeitsmittel</step>
+        <step>Staat und Recht</step>
+        <step url="https://www.baintranet.de/009/Seiten/Merkblatt-Sammlung-aktuell.aspx">Merkblätter
+          der BA</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>Merkblätter der BA</main>
+        <sub>abgelaufene Merkblätter</sub>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/009/Seiten/Arbeitsmittel.aspx">Arbeitsmittel</step>
+        <step>Staat und Recht</step>
+        <step url="https://www.baintranet.de/009/Seiten/Merkblatt-abgelaufen-Archiv.aspx">Abgelaufene
+          Merkblätter</step>
+      </trail>
+    </entry>
+  </collection>
+  <collection label="IT-Verfahren">
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>eAkte</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/006/Seiten/Interne-Dienstleistungen.aspx">Interne
+          Dienstleistungen</step>
+        <step url="https://www.baintranet.de/006/013/Seiten/default.aspx">Handbuch zur eAkte</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>ERP</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/006/Seiten/Interne-Dienstleistungen.aspx">Interne
+          Dienstleistungen</step>
+        <step url="https://www.baintranet.de/006/005/Seiten/Startseite-Finanzen.aspx">Finanzen</step>
+        <step url="https://www.baintranet.de/006/005/003/Seiten/ERP-Startseite.aspx">ERP Finanzen</step>
+        <step url="https://www.baintranet.de/006/005/003/002/Seiten/ERP-Arbeitsmittel.aspx">
+          Arbeitsmittel</step>
+        <step
+          url="https://www.baintranet.de/006/005/003/002/Seiten/ERP-Anwenderhandbuch-ERP-Finanzen.aspx">Anwenderhandbuch
+          ERP Finanzen</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2021-07-28</updated>
+      <title>
+        <main>eSolution-Portal der DRV</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/011/001/010/005/Seiten/HEGA-05-2012-VA-eSolutions.aspx">HEGA
+          05/2012 - 06 - Einführung des eSolution-Portals – Hilfe bei der Ermittlung der
+          Rentenversicherungsnummer</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>Sonstige BA-Verfahren</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/006/Seiten/Interne-Dienstleistungen.aspx">Interne
+          Dienstleistungen</step>
+        <step
+          url="https://www.baintranet.de/006/010/Seiten/startseite-informationstechnik-index.aspx">
+          Informationstechnik</step>
+        <step url="https://www.baintranet.de/006/010/008/Seiten/Startseite-UHD.aspx">UHD</step>
+        <step
+          url="https://www.baintranet.de/006/010/008/005/Seiten/ba-verfahren-index-Version1.aspx">
+          BA-Verfahren</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>IT-Verfügbarkeit</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/006/Seiten/Interne-Dienstleistungen.aspx">Interne
+          Dienstleistungen</step>
+        <step
+          url="https://www.baintranet.de/006/010/Seiten/startseite-informationstechnik-index.aspx">
+          Informationstechnik</step>
+        <step url="https://www.baintranet.de/006/010/008/Seiten/Startseite-UHD.aspx">UHD</step>
+        <step url="http://it-verfuegbarkeit.web.dst.baintern.de/">IT-Verfügbarkeit</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2019-10-16</updated>
+      <title>
+        <main>UHD Wissensdatenbank</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/006/Seiten/Interne-Dienstleistungen.aspx">Interne
+          Dienstleistungen</step>
+        <step
+          url="https://www.baintranet.de/006/010/Seiten/startseite-informationstechnik-index.aspx">
+          Informationstechnik</step>
+        <step url="https://www.baintranet.de/006/010/008/Seiten/Startseite-UHD.aspx">UHD</step>
+        <step url="https://www.baintranet.de/006/010/008/010/Seiten/uhd-wissensdatenbank-index.aspx">
+          UHD-Wissensdatenbank</step>
+        <step url="https://www.baintranet.de/info/uhdwdb/Seiten/Start.aspx">UHD Wissensdatenbank</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2019-08-19</updated>
+      <title>
+        <main>Verfahrensinformationen SGB III</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/011/Seiten/default.aspx">Weisungen &amp; Informationen</step>
+        <step url="https://www.baintranet.de/011/003/001/Seiten/Neue-Seite.aspx">Verfahrensinformationen
+          SGB III</step>
+      </trail>
+    </entry>
+    <entry>
+      <updated>2025-10-24</updated>
+      <title>
+        <main>Signierungservice für Officedateien</main>
+      </title>
+      <trail>
+        <step url="https://www.baintranet.de">Intranet alt</step>
+        <step url="https://www.baintranet.de/011/Seiten/default.aspx">Weisungen &amp; Informationen</step>
+        <step url="https://www.baintranet.de/011/004/Seiten/default.aspx">Weisungen</step>
+        <step url="https://www.baintranet.de/011/004/012/Seiten/default.aspx">Weisungen 2025</step>
+        <step url="https://www.baintranet.de/011/004/012/006/Seiten/Uebersicht.aspx">06/2025</step>
+        <step url="https://www.baintranet.de/011/004/012/006/Seiten/Weisung-202506002.aspx">Weisung
+          202506002 vom 16.06.2025 – Digitale Signierung von MS Office-Dateien mit Visual Basic für
+          Applikationen (VBA)</step>
+        <step>2.2 Bereitstellung eines Makrosignierungsservice</step>
+        <step url="https://makrosignierung.webapp.dst.baintern.de/Startseite">Web App
+          "Makrosignierung"</step>
+      </trail>
+    </entry>
+  </collection>
+  <collection label="SGG Links">
+    <collection label="Gesetzestexte">
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>EUR-Lex</main>
+          <sub>Der Zugang zum EU-Recht</sub>
+        </title>
+        <trail>
+          <step url="http://eur-lex.europa.eu">http://eur-lex.europa.eu</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Gesetze und Rechtsverordnungen im Internet</main>
+          <sub>Gemeinsames Projekt von BMJ und juris GmbH</sub>
+        </title>
+        <trail>
+          <step url="http://www.gesetze-im-internet.de">www.gesetze-im-internet.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Gesetze und Rechtsverordnungen im Internet</main>
+          <sub>Verweissammlung im Internet von Mark Obrembalski</sub>
+        </title>
+        <trail>
+          <step url="http://www.rechtliches.de/">www.rechtliches.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Bundesgesetzblatt</main>
+          <sub>Kostenloser Bürgerzugang (Nur-Lese-Version)</sub>
+        </title>
+        <trail>
+          <step url="https://www.bgbl.de/">https://www.bgbl.de/</step>
+          <step>BGBl. Online</step>
+          <step url="http://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl">Kostenloser
+            Bürgerzugang</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Parlamentsspiegel</main>
+        </title>
+        <trail>
+          <step url="http://www.parlamentsspiegel.de/">www.parlamentsspiegel.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2024-07-02</updated>
+        <title>
+          <main>JURIS Recherche</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/011/005/010/010/Seiten/Information-202310001.aspx">Information
+            202310001 vom 01.10.2023 – Datenbank juris – Änderung des Anmeldeprozesses</step>
+          <step url="http://www.juris.de/">www.juris.de</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="FW SGG">
+      <entry>
+        <updated>2025-11-27</updated>
+        <title>
+          <main>Rechtsbehelfsverfahren SGB III</main>
+        </title>
+        <trail>
+          <step url="https://social.baintranet.de">Social Intranet</step>
+          <step>Hauptnavigation</step>
+          <step url="https://content.baintranet.de/SitePages/Operatives/Operatives.aspx">Operatives</step>
+          <step
+            url="https://content.baintranet.de/SitePages/Operatives/Kundenzugang-und-Geldleistungen.aspx">Kundenzugang
+            und Geldleistungen</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Uebergreifende-Rechtsgebiete.aspx">Übergreifende
+            Rechtsgebiete</step>
+          <step
+            url="https://content.baintranet.de/zentral/9053/SitePages/Rechtsbehelfsverfahren-SGB-III.aspx">Rechtsbehelfsverfahren
+            SGB III</step>
+          <step>Weisungen und Ähnliches</step>
+          <step>Inhaltsverzeichnis</step>
+          <step>Fachliche Weisungen</step>
+          <step>Fachliche Weisungen für Angelegenheiten nach dem ...</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Informationssysteme">
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>EUR-Lex</main>
+          <sub>Der Zugang zum EU-Recht</sub>
+        </title>
+        <trail>
+          <step url="http://eur-lex.europa.eu/de/index.htm">http://eur-lex.europa.eu/de/index.htm</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2024-07-02</updated>
+        <title>
+          <main>JURIS Recherche</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="http://www.juris.de/">www.juris.de</step>
+          <step url="https://www.baintranet.de/011/005/010/010/Seiten/Information-202310001.aspx">Information
+            202310001 vom 01.10.2023 – Datenbank juris – Änderung des Anmeldeprozesses</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Beck Online</main>
+          <sub>Datenbanknutzung nur für registrierte Benutzer mit Zugangskennung (beschränkter
+            Personenkreis)</sub>
+        </title>
+        <trail>
+          <step url="http://www.beck-online.de/">www.beck-online.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Justizportal des Bundes und der Länder</main>
+          <sub>u. a. Handelsregisterinfos und Insolvenzbekanntmachungen</sub>
+        </title>
+        <trail>
+          <step url="http://www.justiz.de/">www.justiz.de</step>
+          <step url="http://www.justiz.de/onlinedienste/index.php">Onlinedienste</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2020-02-19</updated>
+        <title>
+          <main>rvRecht</main>
+          <sub>Rechtsportal der Deutschen Rentenversicherung</sub>
+        </title>
+        <trail>
+          <step url="https://rvrecht.deutsche-rentenversicherung.de/DE/Home/home_node.html">
+            https://rvrecht.deutsche-rentenversicherung.de/...</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Rechtsprechung">
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Sozialgerichtsbarkeit</main>
+        </title>
+        <trail>
+          <step url="http://www.sozialgerichtsbarkeit.de">www.sozialgerichtsbarkeit.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Bundesverfassungsgericht</main>
+        </title>
+        <trail>
+          <step url="http://www.bundesverfassungsgericht.de">www.bundesverfassungsgericht.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Bundesgerichtshof</main>
+        </title>
+        <trail>
+          <step url="http://www.bundesgerichtshof.de/">www.bundesgerichtshof.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Bundesverwaltungsgericht</main>
+        </title>
+        <trail>
+          <step url="http://www.bundesverwaltungsgericht.de">www.bundesverwaltungsgericht.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Bundessozialgericht</main>
+        </title>
+        <trail>
+          <step url="http://www.bsg.bund.de">www.bsg.bund.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Bundesfinanzhof</main>
+        </title>
+        <trail>
+          <step url="http://www.bundesfinanzhof.de">www.bundesfinanzhof.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>JURIS Recherche</main>
+          <sub>Nutzung nur aus dem BA-Netz mit Benutzername »basgb2« bzw. »basgb3« (Passwort kann
+            leer bleiben!), s. E-Mail-Info SGB III vom 20.11.2007 / Verfahrensinformation SGB II vom
+            20.11.2007</sub>
+        </title>
+        <trail>
+          <step url="http://www.juris.de/">www.juris.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2020-02-19</updated>
+        <title>
+          <main>Streitwertkatalog</main>
+        </title>
+        <trail>
+          <step
+            url="https://www.lsg.nrw.de/infos/Streitwertkatalog/Streitwertkatalog_Maerz_2017.pdf">
+            Streitwertkatalog</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Gesetzgebung">
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>DIP - Dokumentations- und Informationssystem für Parlamentarische Vorgänge</main>
+        </title>
+        <trail>
+          <step url="http://dipbt.bundestag.de/dip21.web/bt">http://dipbt.bundestag.de/dip21.web/bt</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Rechtsförmlichkeiten">
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Handbuch der Rechtsförmlichkeiten</main>
+          <sub>u. a.: Sprachliche Gleichbehandlung von Frauen und Männern (Pkt. B 1.8), Zitierweise
+            von Normen (Pkt. B 3.2) und der einzelnen Bücher des Sozialgesetzbuches (Pkt. B 3.3)</sub>
+        </title>
+        <trail>
+          <step url="http://hdr.bmj.de/sitemap.html">http://hdr.bmj.de/sitemap.html</step>
+        </trail>
+      </entry>
+    </collection>
+    <collection label="Hilfsmittel">
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Telefonauskunft</main>
+        </title>
+        <trail>
+          <step url="http://www.teleauskunft.de/">www.teleauskunft.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Dienststellen-Ortsverzeichnis der BA</main>
+        </title>
+        <trail>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/011/005/010/010/Seiten/Information-202310001.aspx">Information
+            202310001 vom 01.10.2023 – Datenbank juris – Änderung des Anmeldeprozesses</step>
+          <step url="https://www.baintranet.de">Intranet alt</step>
+          <step url="https://www.baintranet.de/009/Seiten/Arbeitsmittel.aspx">Arbeitsmittel</step>
+          <step>Recherche allgemein</step>
+          <step url="https://www.baintranet.de/008/Seiten/DIP.aspx">Dienststellen der BA</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Routenplaner: Google Maps</main>
+        </title>
+        <trail>
+          <step url="https://maps.google.de/">https://maps.google.de/</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Bahnauskunft</main>
+        </title>
+        <trail>
+          <step url="http://reiseauskunft.bahn.de/">http://reiseauskunft.bahn.de</step>
+        </trail>
+      </entry>
+      <entry>
+        <updated>2019-08-19</updated>
+        <title>
+          <main>Tabellenkalender und Messleiste</main>
+        </title>
+        <trail>
+          <step url="http://tabellenkalender.wordpress.com">http://tabellenkalender.wordpress.com</step>
+        </trail>
+      </entry>
+    </collection>
+  </collection>
+</collections>
