@@ -305,3 +305,38 @@ document.addEventListener('DOMContentLoaded', () => {
   applyNavState();
   updateDebugOverlay();
 });
+
+/* ===================================================== */
+/* PATCH N3 – DEV Dark Mode Toggle (DEV only)            */
+/* ===================================================== */
+
+(function setupDevDarkModeToggle() {
+
+  /* Nur im DEV-Modus */
+  if (document.body.dataset.dev !== 'true') return;
+
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.dev-dark-toggle');
+    if (!btn) return;
+
+    const html = document.documentElement;
+
+    const isDark = html.classList.contains('force-dark');
+
+    if (isDark) {
+      html.classList.remove('force-dark');
+      html.classList.add('force-light');
+      btn.textContent = 'DEV Dark Mode';
+    } else {
+      html.classList.add('force-dark');
+      html.classList.remove('force-light');
+      btn.textContent = 'DEV Light Mode';
+    }
+
+    console.log(
+      `%cDEV Dark Mode ${!isDark ? 'ON' : 'OFF'}`,
+      'color:#7aa2f7;font-weight:600'
+    );
+  });
+
+})();
