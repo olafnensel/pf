@@ -1,22 +1,142 @@
-/* =====================================================
-   PFADFINDER – NAVIGATION ARCHITEKTUR
-   =====================================================
+/* ================================================================
+   PFADFINDER – NAVIGATION ARCHITEKTUR (REVIEW-BASELINE)
+   ================================================================
 
    Review-Baseline:
    Commit: "Navigation – mit ROOT Exit"
 
-   Grundprinzipien:
-   - Navigation kennt genau EINEN aktiven Modus:
-     ROOT oder SCOPE
-   - JavaScript verändert NUR Klassen & Attribute
-   - DOM-Struktur wird nicht umgebaut
-   - Alle Klicks laufen über EINEN zentralen Handler
+   Ziel dieses Dokuments:
+   - Architektur und Grenzen der Navigation eindeutig festlegen
+   - spätere Änderungen überprüfbar und reversibel machen
+   - implizite Annahmen explizit dokumentieren
 
-   Patch L0:
-   - reine Struktur- und Dokumentationsschritte
-   - kein neues Verhalten
-   - keine DOM-Änderungen
-===================================================== */
+   ---------------------------------------------------------------
+   GRUNDPRINZIPIEN
+   ---------------------------------------------------------------
+
+   1) Eindeutiger Navigationszustand (State Machine)
+      ------------------------------------------------
+      Die Navigation ist eine explizite Zustandsmaschine
+      mit genau ZWEI erlaubten Zuständen:
+
+        - ROOT  : ungefilterte Navigation
+        - SCOPE : Navigation fokussiert auf einen aktiven Parent
+
+      Es darf zu jedem Zeitpunkt GENAU EIN Zustand aktiv sein.
+      Zwischenzustände sind nicht erlaubt.
+
+   2) Keine strukturellen DOM-Umbauten
+      ------------------------------------------------
+      - Die vom XSLT erzeugte DOM-Struktur ist stabil.
+      - JavaScript fügt KEINE neuen Navigationselemente ein
+        und entfernt KEINE bestehenden.
+
+      Begründung:
+      - XSLT bleibt alleiniger Strukturverantwortlicher
+      - Debugging und Wartung bleiben nachvollziehbar
+      - Accessibility-Logik bleibt kontrollierbar
+
+   3) JavaScript verändert ausschließlich Zustände
+      ------------------------------------------------
+      JavaScript verändert NUR:
+      - Zustandsklassen (z. B. .active, .open, .is-hidden)
+      - ARIA-Attribute (z. B. aria-current, aria-expanded)
+
+      JavaScript verändert NICHT:
+      - die DOM-Hierarchie
+      - Textinhalte
+      - Layout-relevante Inline-Styles
+
+   4) Zentrale Ereignissteuerung
+      ------------------------------------------------
+      - Es existiert genau EIN zentraler Click-Handler
+        (Event Delegation).
+      - Einzelne Navigationselemente besitzen keine
+        eigenen Event Listener.
+
+      Begründung:
+      - konsistentes Verhalten für Maus & Tastatur
+      - klare Trennung von Struktur und Verhalten
+      - keine versteckten Seiteneffekte
+
+   5) Trennung der Verantwortlichkeiten
+      ------------------------------------------------
+      - XSLT: erzeugt Struktur & Daten
+      - CSS : definiert Darstellung aller Zustände
+      - JS  : steuert ausschließlich den aktiven Zustand
+
+   ---------------------------------------------------------------
+   WICHTIGE ARCHITEKTUR-ENTSCHEIDUNG
+   ---------------------------------------------------------------
+
+   Diese Baseline beschreibt den LETZTEN stabilen Zustand
+   vor Einführung eines "Fixed Parent".
+
+   Abweichungen von diesen Prinzipien müssen:
+   - bewusst erfolgen
+   - explizit dokumentiert werden
+   - und technisch begründet sein
+
+   ================================================================ */
+
+/* =====================================================
+   PATCH M2 – STATE INVARIANTS & REVIEW GUARDS
+   =====================================================
+
+   Zweck:
+   - Macht implizite Annahmen der Navigation explizit
+   - Keine Verhaltensänderung
+   - Dient ausschließlich Review & Stabilisierung
+
+   Grundannahmen (Invariant):
+   1) Es gibt IMMER genau einen Navigationszustand:
+      - ROOT oder SCOPE
+   2) ROOT und SCOPE schließen sich gegenseitig aus
+   3) DOM wird NICHT umgebaut, nur Klassen geändert
+   4) Alle Zustandswechsel laufen über zentrale Funktionen
+*/
+
+/* -----------------------------------------------------
+   STATE INVARIANT GUARD
+   ----------------------------------------------------- */
+
+function assertValidNavState(context = '') {
+  if (!Object.values(NAV_STATE).includes(currentNavState)) {
+    console.warn(
+      '[Pfadfinder][Invariant verletzt]',
+      'Ungültiger Navigation State:',
+      currentNavState,
+      context
+    );
+  }
+}
+
+/* -----------------------------------------------------
+   ZUSTANDSWECHSEL – DOKUMENTIERT
+   ----------------------------------------------------- */
+
+/*
+  enterRootMode():
+  - setzt Navigation in Ausgangszustand
+  - KEIN aktiver Parent
+  - KEIN Scope
+*/
+
+function setNavStateRoot(context = '') {
+  currentNavState = NAV_STATE.ROOT;
+  assertValidNavState(context);
+}
+
+/*
+  enterScopeMode():
+  - Navigation fokussiert auf EINEN Parent
+  - Root-Navigation ist visuell eingeschränkt
+*/
+
+function setNavStateScope(context = '') {
+  currentNavState = NAV_STATE.SCOPE;
+  assertValidNavState(context);
+}
 
 /* ===================================================== */
 /* Helper-Funktionen */
