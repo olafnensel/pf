@@ -2,6 +2,18 @@
    PFADFINDER – NAVIGATION ARCHITEKTUR (REVIEW-BASELINE)
    ================================================================ */
 
+/* =====================================================
+   DEV-GATE – zentrale Entwicklungs-Erkennung
+   ===================================================== */
+
+/*
+  DEV ist aktiv, wenn:
+  <body data-dev="true"> gesetzt ist
+*/
+function isDevMode() {
+  return document.body?.dataset?.dev === 'true';
+}
+
 /* ===================================================== */
 /* Navigation States */
 /* ===================================================== */
@@ -30,55 +42,17 @@ function qsa(selector, root = document) {
 }
 
 /* ===================================================== */
-/* DEV – Navigation State Logging */
-/* ===================================================== */
-
-function logNavStateChange(from, to, reason = '') {
-  console.groupCollapsed(
-    `%cNAV STATE: ${from} → ${to}`,
-    'color:#7aa2f7;font-weight:600'
-  );
-  if (reason) console.log('reason:', reason);
-  console.groupEnd();
-}
-
-/* ===================================================== */
-/* NAV STATE – Invarianten (DEV) */
-/* ===================================================== */
-
-function assertNavInvariants(context = '') {
-  if (currentNavState === NAV_STATE.ROOT) {
-    if (currentActiveId !== null || currentFixedParentId !== null) {
-      console.warn('%cNAV INVARIANT VIOLATION (ROOT)', 'color:#e0af68;font-weight:600');
-      console.warn('activeId:', currentActiveId);
-      console.warn('fixedParent:', currentFixedParentId);
-      if (context) console.warn('context:', context);
-    }
-  }
-
-  if (currentNavState === NAV_STATE.SCOPE) {
-    if (!currentFixedParentId || !currentActiveId) {
-      console.warn('%cNAV INVARIANT VIOLATION (SCOPE)', 'color:#e0af68;font-weight:600');
-      console.warn('activeId:', currentActiveId);
-      console.warn('fixedParent:', currentFixedParentId);
-      if (context) console.warn('context:', context);
-    }
-  }
-}
-
-/* ===================================================== */
 /* ZENTRALER NAVIGATION-STATE-WECHSEL */
 /* ===================================================== */
 
 function setNavState(nextState, reason = '') {
   if (currentNavState === nextState) return;
-
   const prev = currentNavState;
   currentNavState = nextState;
-
-  logNavStateChange(prev, nextState, reason);
-  assertNavInvariants(reason);
-  updateDebugOverlay();
+  PF_DEV.onStateChange(prev, nextState, reason, {
+    activeId: currentActiveId,
+    fixedParentId: currentFixedParentId
+  });
 }
 
 /* ===================================================== */
@@ -90,30 +64,6 @@ function applyNavState() {
     document.body.classList.remove('nav-focus-mode');
   } else {
     document.body.classList.add('nav-focus-mode');
-  }
-
-  applyDevVisualState();
-}
-
-/* ===================================================== */
-/* DEV – Visuelles State-Highlight */
-/* ===================================================== */
-
-function applyDevVisualState() {
-  if (document.body.dataset.dev !== 'true') return;
-
-  qsa('.nav-item').forEach(el => {
-    el.classList.remove('dev-fixed-parent', 'dev-active-leaf');
-  });
-
-  if (currentFixedParentId) {
-    const parent = document.getElementById(currentFixedParentId);
-    if (parent) parent.classList.add('dev-fixed-parent');
-  }
-
-  if (currentActiveId) {
-    const leaf = document.getElementById(currentActiveId);
-    if (leaf) leaf.classList.add('dev-active-leaf');
   }
 }
 
@@ -147,6 +97,7 @@ function enterScopeMode(activeItem, activeId) {
      ===================================================== */
 
   if (
+    isDevMode() &&
     currentNavState === NAV_STATE.SCOPE &&
     currentFixedParentId === (parentItem.id || null) &&
     currentActiveId &&
@@ -239,104 +190,107 @@ document.addEventListener('keydown', e => {
   }
 });
 
-/* ===================================================== */
-/* DEV DEBUG OVERLAY */
-/* ===================================================== */
+/* =====================================================
+   PATCH 02 – DEV tools (gebündelt)
+   ===================================================== */
 
-let debugOverlayEl = null;
-const devStateHistory = [];
-const DEV_STATE_HISTORY_LIMIT = 6;
+const PF_DEV = (function () {
 
-function ensureDebugOverlay() {
-  if (document.body.dataset.dev !== 'true') return;
-
-  if (!debugOverlayEl) {
-    debugOverlayEl = document.createElement('div');
-    debugOverlayEl.id = 'pf-debug-overlay';
-    debugOverlayEl.style.cssText = `
-      position: fixed;
-      bottom: .5rem;
-      left: .5rem;
-      z-index: 9999;
-      font: 12px monospace;
-      background: rgba(0,0,0,.75);
-      color: #0f0;
-      padding: .4rem .6rem;
-      border-radius: 4px;
-      pointer-events: none;
-    `;
-    document.body.appendChild(debugOverlayEl);
+  function isEnabled() {
+    return document.body?.dataset?.dev === 'true';
   }
-}
 
-function updateDebugOverlay() {
-  if (document.body.dataset.dev !== 'true') return;
-  ensureDebugOverlay();
+  /* ---------- Logging ---------- */
 
-  debugOverlayEl.innerHTML = `
-    <div>NAV_STATE: <b>${currentNavState}</b></div>
-    <div>activeId: <b>${currentActiveId || '–'}</b></div>
-    <div>fixedParent: <b>${currentFixedParentId || '–'}</b></div>
-    <div style="margin-top:4px;opacity:.8">History:</div>
-    ${devStateHistory.map(h =>
-    `<div>• ${h.from} → ${h.to} (${h.reason})</div>`
-  ).join('')}
-  `;
-}
-
-/* Hook für Timeline */
-(function patchSetNavStateForTimeline() {
-  const originalSetNavState = setNavState;
-
-  window.setNavState = function (next, reason = '') {
-    const prev = currentNavState;
-    if (prev !== next) {
-      devStateHistory.unshift({ from: prev, to: next, reason });
-      if (devStateHistory.length > DEV_STATE_HISTORY_LIMIT) {
-        devStateHistory.length = DEV_STATE_HISTORY_LIMIT;
-      }
-    }
-    originalSetNavState(next, reason);
-  };
-})();
-
-/* Initial Sync */
-document.addEventListener('DOMContentLoaded', () => {
-  applyNavState();
-  updateDebugOverlay();
-});
-
-/* ===================================================== */
-/* PATCH N3 – DEV Dark Mode Toggle (DEV only)            */
-/* ===================================================== */
-
-(function setupDevDarkModeToggle() {
-
-  /* Nur im DEV-Modus */
-  if (document.body.dataset.dev !== 'true') return;
-
-  document.addEventListener('click', e => {
-    const btn = e.target.closest('.dev-dark-toggle');
-    if (!btn) return;
-
-    const html = document.documentElement;
-
-    const isDark = html.classList.contains('force-dark');
-
-    if (isDark) {
-      html.classList.remove('force-dark');
-      html.classList.add('force-light');
-      btn.textContent = 'DEV Dark Mode';
-    } else {
-      html.classList.add('force-dark');
-      html.classList.remove('force-light');
-      btn.textContent = 'DEV Light Mode';
-    }
-
-    console.log(
-      `%cDEV Dark Mode ${!isDark ? 'ON' : 'OFF'}`,
+  function logStateChange(from, to, reason) {
+    if (!isEnabled()) return;
+    console.groupCollapsed(
+      `%cNAV STATE: ${from} → ${to}`,
       'color:#7aa2f7;font-weight:600'
     );
-  });
+    if (reason) console.log('reason:', reason);
+    console.groupEnd();
+  }
 
+  /* ---------- Invariants ---------- */
+
+  function checkInvariants(state, data) {
+    if (!isEnabled()) return;
+
+    if (state === 'root') {
+      if (data.activeId || data.fixedParentId) {
+        console.warn('NAV INVARIANT (ROOT) violated', data);
+      }
+    }
+
+    if (state === 'scope') {
+      if (!data.activeId || !data.fixedParentId) {
+        console.warn('NAV INVARIANT (SCOPE) violated', data);
+      }
+    }
+  }
+
+  /* ---------- Debug Overlay ---------- */
+
+  let overlay;
+
+  function ensureOverlay() {
+    if (!isEnabled()) return;
+    if (overlay) return;
+
+    overlay = document.createElement('div');
+    overlay.style.cssText = `
+      position:fixed;
+      bottom:.5rem;
+      left:.5rem;
+      z-index:9999;
+      font:12px monospace;
+      background:rgba(0,0,0,.75);
+      color:#0f0;
+      padding:.4rem .6rem;
+      border-radius:4px;
+      pointer-events:none;
+    `;
+    document.body.appendChild(overlay);
+  }
+
+  function renderOverlay(state, data) {
+    if (!isEnabled()) return;
+    ensureOverlay();
+    overlay.innerHTML = `
+      <div>NAV_STATE: <b>${state}</b></div>
+      <div>activeId: <b>${data.activeId || '–'}</b></div>
+      <div>fixedParent: <b>${data.fixedParentId || '–'}</b></div>
+    `;
+  }
+
+  /* ---------- Dark Mode (DEV) ---------- */
+
+  function setupDarkToggle() {
+    if (!isEnabled()) return;
+
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('.dev-dark-toggle');
+      if (!btn) return;
+
+      const html = document.documentElement;
+      const isDark = html.classList.contains('force-dark');
+
+      html.classList.toggle('force-dark', !isDark);
+      html.classList.toggle('force-light', isDark);
+      btn.textContent = isDark ? 'DEV Dark Mode' : 'DEV Light Mode';
+    });
+  }
+
+  /* ---------- Public API ---------- */
+
+  function onStateChange(prev, next, reason, data) {
+    logStateChange(prev, next, reason);
+    checkInvariants(next, data);
+    renderOverlay(next, data);
+  }
+
+  document.addEventListener('DOMContentLoaded', setupDarkToggle);
+
+  return { onStateChange };
 })();
