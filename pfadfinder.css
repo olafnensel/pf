@@ -94,13 +94,14 @@ h1 {
 
 
 /* ========================================================= */
-/* 6. Navigation – Scrollbereich                             */
+/* 6. Navigation – Scrollbereich (ROOT)                      */
 /* ========================================================= */
 
 .nav-scroll {
   flex: 1 1 auto;
   overflow-y: auto;
-  padding: .5rem;
+  padding: 0;
+  /* Scrollbar bündig */
 }
 
 
@@ -118,20 +119,21 @@ nav li {
   margin: .15rem 0;
 }
 
+
 /* ========================================================= */
-/* PATCH: Kompakte Nav-Höhe                                  */
+/* 8. Navigation – Buttons (Grundgeometrie)                  */
 /* ========================================================= */
 
 .nav-pane button {
   all: unset;
   display: flex;
   align-items: center;
+  gap: 0.6em;
 
   width: 100%;
   box-sizing: border-box;
 
-  /* kompakte, gut lesbare Höhe */
-  padding: .2rem .6rem;
+  padding: .3rem .75rem;
   line-height: 1.25;
 
   border-radius: 6px;
@@ -142,64 +144,38 @@ nav li {
   background: rgba(0, 0, 0, .06);
 }
 
-
 /* ========================================================= */
-/* 8. Navigation – Grundzustände                             */
+/* 9. Navigation – Zustände                                  */
 /* ========================================================= */
 
-.nav-item>button[aria-current="true"] {
-  background: rgba(0, 0, 0, .06);
+/* aria-current (Root-Leaves, Fallback) */
+.nav-pane>nav>ul>.nav-item>button[aria-current="true"] {
+  background: #e5efff;
+  color: var(--color-accent);
 }
 
-/* Alle Nav-Buttons: 2-Spalten-Flow */
-.nav-pane button {
-  display: flex;
-  align-items: center;
-  gap: 0.6em;
-}
-
-/* Root-Parents & Root-Leafs gleich gewichten */
-.nav-pane>nav>ul>.nav-item>button {
-  font-weight: 500;
-}
-
-/* Aktives Leaf (ROOT & SCOPE identisch) */
+/* Aktives Leaf (Root + Scope, primär) */
 .nav-item.active>button {
   background: #e5efff;
   color: var(--color-accent);
 }
 
-/* Parent-Buttons mit Children: definierte Chevron-Spalte */
-.nav-toggle {
-  padding-left: calc(.6rem + 1ch + 0.6em);
+/* Root-Leaves explizit absichern */
+.nav-pane>nav>ul>.nav-item.active>button {
+  background: #e5efff;
+  color: var(--color-accent);
 }
 
-/* Leicht kräftigerer Parent-Text */
-.nav-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
-  /* Abstand Chevron ↔ Text */
+/* Root-Parents & Root-Leaves gleich gewichten */
+.nav-pane>nav>ul>.nav-item>button {
   font-weight: 500;
 }
 
-/* Scope-Modus (Fixed Parent) */
-.nav-fixed-parent-button {
-  font-weight: 600;
-}
 
 /* ========================================================= */
-/* PATCH: Einheitliche Button-Struktur (Icon + Label)       */
+/* 10. Einheitliche Button-Struktur (Icon + Label)           */
 /* ========================================================= */
 
-/* Gemeinsame Struktur für alle Nav-Buttons */
-.nav-pane button {
-  display: flex;
-  align-items: center;
-  gap: 0.6em;
-}
-
-/* Icon-Spalte: feste Breite */
 .nav-pane .nav-icon {
   display: inline-block;
   width: 1ch;
@@ -207,52 +183,48 @@ nav li {
   text-align: center;
 }
 
-/* Label-Spalte */
 .nav-pane .nav-label {
   flex: 1 1 auto;
 }
 
-/* Chevron nur bei Parents */
+
+/* ========================================================= */
+/* 11. Parent-Buttons (Chevron)                              */
+/* ========================================================= */
+
+.nav-toggle {
+  padding-left: calc(.75rem + 1ch + 0.6em);
+  font-weight: 500;
+}
+
 .nav-toggle>.nav-icon::before {
   content: '›';
   opacity: 0.6;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
-/* Geöffneter Parent */
 .nav-toggle[aria-expanded="true"]>.nav-icon::before {
   transform: rotate(90deg);
   opacity: 0.9;
 }
 
+
 /* ========================================================= */
-/* 9. Navigation – Aufklappen (ROOT)                         */
+/* 12. Navigation – Aufklappen (ROOT)                        */
 /* ========================================================= */
 
 .nav-item>.nav-children {
-    display: none;
-    margin-left: 1.2rem;
-  }
+  display: none;
+  margin-left: 1.2rem;
+}
 
 .nav-item.open>.nav-children {
   display: block;
 }
 
-/* ========================================================= */
-/* PATCH: Fixed Parent – Apple-like Hierarchie               */
-/* ========================================================= */
-
-.nav-fixed-parent-button {
-  font-size: 1.05em;
-  /* minimal größer */
-  font-weight: 600;
-  /* dezent stärker */
-  letter-spacing: .01em;
-  /* optional, sehr subtil */
-}
 
 /* ========================================================= */
-/* 10. Content                                               */
+/* 13. Content                                               */
 /* ========================================================= */
 
 main {
@@ -263,7 +235,7 @@ main {
 
 
 /* ========================================================= */
-/* 11. Fixed Parent (SCOPE – Spiegel)                        */
+/* 14. Fixed Parent (SCOPE – Spiegel)                        */
 /* ========================================================= */
 
 .nav-fixed-parent {
@@ -278,38 +250,47 @@ main {
   display: block;
   width: 100%;
   padding: .35rem .6rem;
+
+  font-size: 1.05em;
   font-weight: 600;
+  letter-spacing: .01em;
+
   color: var(--color-accent);
   cursor: pointer;
 }
 
-/* EINZIGES Sticky im System */
+/* einziges Sticky im System */
 body.nav-focus-mode .nav-fixed-parent {
   display: block;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: static;
+  /* WAR sticky */
+  z-index: auto;
 }
 
 
 /* ========================================================= */
-/* 12. Navigation – Fokusmodus (SCOPE)                       */
+/* 15. Navigation – Fokusmodus (SCOPE)                       */
 /* ========================================================= */
 
 /*
-  SCOPE-Modell (Patch 08):
-  - Tree bleibt vollständig erhalten
-  - Parent bleibt sichtbar (aber ohne Button)
-  - Fixed Parent übernimmt die Parent-Rolle
-  - Nur Leafs des aktiven Parents sind sichtbar
+  SCOPE-Modell:
+  - nav-scroll scrollt NICHT
+  - EIN Scrollcontainer: .nav-children
 */
 
-/* Nicht relevante Root-Branches ausblenden */
+/* irrelevante Branches ausblenden */
 body.nav-focus-mode .nav-item.is-hidden {
   display: none;
 }
 
-/* Parent-BUTTON ausblenden (nicht das Element!) */
+body.nav-focus-mode .nav-scroll {
+  display: block;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* Parent-Button ausblenden */
 body.nav-focus-mode .nav-item.is-scope-parent>button {
   display: none;
 }
@@ -319,13 +300,12 @@ body.nav-focus-mode .nav-item>.nav-children {
   display: none;
 }
 
-/* NUR Leafs des aktiven Parents */
 body.nav-focus-mode .nav-item.is-scope-parent>.nav-children {
   display: block;
-  margin-top: .2rem;
+  overflow: visible;
 }
 
-/* Aktives Leaf klar hervorheben */
+/* Aktives Scope-Leaf */
 body.nav-focus-mode .nav-item.is-scope-leaf.active>button {
   background: #e5efff;
   color: var(--color-accent);
@@ -333,7 +313,7 @@ body.nav-focus-mode .nav-item.is-scope-leaf.active>button {
 
 
 /* ========================================================= */
-/* 13. ROOT-Exit                                             */
+/* 16. ROOT-Exit                                             */
 /* ========================================================= */
 
 .nav-root-exit {
@@ -359,7 +339,7 @@ body.nav-focus-mode .nav-root-exit {
 
 
 /* ========================================================= */
-/* 14. DEV Dark / Light Mode                                 */
+/* 17. DEV Dark / Light Mode                                 */
 /* ========================================================= */
 
 html.force-dark {
@@ -378,8 +358,9 @@ html.force-light {
   --color-accent: #0a58ca;
 }
 
+
 /* ========================================================= */
-/* DEV Tools (Button) – inline im Seitenflow                          */
+/* 18. DEV Tools                                             */
 /* ========================================================= */
 
 .dev-tools {
