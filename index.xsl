@@ -144,7 +144,10 @@
             class="nav-toggle"
             data-nav="{$nid}"
             aria-expanded="false">
-            <xsl:value-of select="@label" />
+            <span class="nav-icon"></span>
+            <span class="nav-label">
+              <xsl:value-of select="@label" />
+            </span>
           </button>
 
           <ul class="nav-children">
@@ -158,7 +161,10 @@
             type="button"
             class="nav-leaf"
             data-col="{$cid}">
-            <xsl:value-of select="@label" />
+            <span class="nav-icon"></span>
+            <span class="nav-label">
+              <xsl:value-of select="@label" />
+            </span>
           </button>
         </xsl:otherwise>
 

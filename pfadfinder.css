@@ -118,13 +118,22 @@ nav li {
   margin: .15rem 0;
 }
 
+/* ========================================================= */
+/* PATCH: Kompakte Nav-Höhe                                  */
+/* ========================================================= */
+
 .nav-pane button {
   all: unset;
   display: flex;
   align-items: center;
+
   width: 100%;
-  padding: .35rem .6rem;
-  height: 2.4rem;
+  box-sizing: border-box;
+
+  /* kompakte, gut lesbare Höhe */
+  padding: .2rem .6rem;
+  line-height: 1.25;
+
   border-radius: 6px;
   cursor: pointer;
 }
@@ -142,6 +151,17 @@ nav li {
   background: rgba(0, 0, 0, .06);
 }
 
+/* Alle Nav-Buttons: 2-Spalten-Flow */
+.nav-pane button {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+/* Root-Parents & Root-Leafs gleich gewichten */
+.nav-pane>nav>ul>.nav-item>button {
+  font-weight: 500;
+}
 
 /* Aktives Leaf (ROOT & SCOPE identisch) */
 .nav-item.active>button {
@@ -149,6 +169,61 @@ nav li {
   color: var(--color-accent);
 }
 
+/* Parent-Buttons mit Children: definierte Chevron-Spalte */
+.nav-toggle {
+  padding-left: calc(.6rem + 1ch + 0.6em);
+}
+
+/* Leicht kräftigerer Parent-Text */
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  /* Abstand Chevron ↔ Text */
+  font-weight: 500;
+}
+
+/* Scope-Modus (Fixed Parent) */
+.nav-fixed-parent-button {
+  font-weight: 600;
+}
+
+/* ========================================================= */
+/* PATCH: Einheitliche Button-Struktur (Icon + Label)       */
+/* ========================================================= */
+
+/* Gemeinsame Struktur für alle Nav-Buttons */
+.nav-pane button {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+/* Icon-Spalte: feste Breite */
+.nav-pane .nav-icon {
+  display: inline-block;
+  width: 1ch;
+  flex: 0 0 1ch;
+  text-align: center;
+}
+
+/* Label-Spalte */
+.nav-pane .nav-label {
+  flex: 1 1 auto;
+}
+
+/* Chevron nur bei Parents */
+.nav-toggle>.nav-icon::before {
+  content: '›';
+  opacity: 0.6;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+/* Geöffneter Parent */
+.nav-toggle[aria-expanded="true"]>.nav-icon::before {
+  transform: rotate(90deg);
+  opacity: 0.9;
+}
 
 /* ========================================================= */
 /* 9. Navigation – Aufklappen (ROOT)                         */
@@ -163,6 +238,18 @@ nav li {
   display: block;
 }
 
+/* ========================================================= */
+/* PATCH: Fixed Parent – Apple-like Hierarchie               */
+/* ========================================================= */
+
+.nav-fixed-parent-button {
+  font-size: 1.05em;
+  /* minimal größer */
+  font-weight: 600;
+  /* dezent stärker */
+  letter-spacing: .01em;
+  /* optional, sehr subtil */
+}
 
 /* ========================================================= */
 /* 10. Content                                               */
