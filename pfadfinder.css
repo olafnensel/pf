@@ -1,10 +1,10 @@
 /* ========================================================= */
-/* Pfadfinder – Basis-CSS (FINAL, konsolidiert) */
+/* Pfadfinder – Basis-CSS (FINAL, konsolidiert)              */
 /* ========================================================= */
 
 
 /* ========================================================= */
-/* 1. Root – Farben, Typografie, Geometrie */
+/* 1. Root – Farben, Typografie, Geometrie                   */
 /* ========================================================= */
 
 :root {
@@ -23,14 +23,13 @@
   --color-border: #e5e5ea;
   --color-bg: #ffffff;
   --color-accent: #0a58ca;
-  --color-meta: #8e8e93;
 
   --header-height: 6.5rem;
 }
 
 
 /* ========================================================= */
-/* 2. Globaler Höhen- und Layoutkontext */
+/* 2. Globaler Layoutkontext                                 */
 /* ========================================================= */
 
 html,
@@ -48,92 +47,66 @@ body {
 
   display: flex;
   flex-direction: column;
-
-  /* EIN globaler Scroll-Kontext */
   overflow: hidden;
 }
 
 
 /* ========================================================= */
-/* 3. Header */
+/* 3. Header                                                 */
 /* ========================================================= */
 
 h1 {
   margin: 0;
   height: var(--header-height);
-
   display: flex;
   align-items: center;
-
   padding: 0 1.5rem;
-  box-sizing: border-box;
-
   flex: 0 0 auto;
 }
 
 
 /* ========================================================= */
-/* 4. Hauptlayout */
+/* 4. Hauptlayout                                            */
 /* ========================================================= */
 
 .layout {
   flex: 1 1 auto;
-
   display: flex;
   gap: 1.5rem;
   padding: 1rem 1.5rem;
-
-  box-sizing: border-box;
   overflow: hidden;
 }
 
 
 /* ========================================================= */
-/* 5. Navigation – Container */
+/* 5. Navigation – Container                                 */
 /* ========================================================= */
 
 .nav-pane {
   flex: 0 0 240px;
   max-width: 260px;
-
   display: flex;
   flex-direction: column;
-
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(0, 0, 0, .03);
   border-radius: 10px;
-
   overflow: hidden;
 }
 
 
 /* ========================================================= */
-/* 6. Navigation – Scrollbereich */
+/* 6. Navigation – Scrollbereich                             */
 /* ========================================================= */
 
 .nav-scroll {
   flex: 1 1 auto;
   overflow-y: auto;
-  padding: 0.5rem;
-}
-
-/* dezente Scrollbar */
-.nav-scroll::-webkit-scrollbar {
-  width: 8px;
-}
-
-.nav-scroll::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
+  padding: .5rem;
 }
 
 
 /* ========================================================= */
-/* 7. Navigation – Struktur */
+/* 7. Navigation – Struktur                                  */
 /* ========================================================= */
-
-nav {
-  font-size: 0.95rem;
-}
 
 nav ul {
   list-style: none;
@@ -142,76 +115,48 @@ nav ul {
 }
 
 nav li {
-  margin: 0.15rem 0;
+  margin: .15rem 0;
 }
 
-/* Stabiler Button: KEIN Inline-Layout mehr */
 .nav-pane button {
   all: unset;
-  position: relative;
   display: flex;
   align-items: center;
-  /* 🔑 vertikal stabil */
   width: 100%;
-  box-sizing: border-box;
-
-  padding: 0.35rem 0.6rem;
+  padding: .35rem .6rem;
   height: 2.4rem;
-  /* 🔑 fix, nicht min-height */
-  font-weight: 400;
-  line-height: 1;
-  /* 🔑 irrelevant durch Flex */
-
-  border: 2px solid transparent;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .nav-pane button:hover {
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, .06);
 }
 
 
 /* ========================================================= */
-/* 8. Navigation – Zustände (Light Mode) */
+/* 8. Navigation – Grundzustände                             */
 /* ========================================================= */
 
-/* selektiert (Keyboard / aria-current) */
 .nav-item>button[aria-current="true"] {
-  background: rgba(0, 0, 0, 0.06);
-  font-weight: 400;
+  background: rgba(0, 0, 0, .06);
 }
 
-/* Aktives Leaf: NUR Farbe ändern */
+
+/* Aktives Leaf (ROOT & SCOPE identisch) */
 .nav-item.active>button {
   background: #e5efff;
   color: var(--color-accent);
-
-  /* KEINE Geometrieänderung mehr */
-  font-weight: 400;
-  border-color: currentColor;
-}
-
-/* Marker für aktives Element */
-.nav-item.active>button::before {
-  content: "";
-  position: absolute;
-  left: 0.3rem;
-  top: 0.4em;
-  bottom: 0.4em;
-  width: 2px;
-  background: currentColor;
-  opacity: 0.6;
 }
 
 
 /* ========================================================= */
-/* 9. Navigation – Aufklappen */
+/* 9. Navigation – Aufklappen (ROOT)                         */
 /* ========================================================= */
 
 .nav-item>.nav-children {
   display: none;
-  margin-left: 0.5rem;
+  margin-left: .5rem;
 }
 
 .nav-item.open>.nav-children {
@@ -220,7 +165,7 @@ nav li {
 
 
 /* ========================================================= */
-/* 10. Content */
+/* 10. Content                                               */
 /* ========================================================= */
 
 main {
@@ -231,136 +176,103 @@ main {
 
 
 /* ========================================================= */
-/* 11. Dark Mode (System) */
+/* 11. Fixed Parent (SCOPE – Spiegel)                        */
 /* ========================================================= */
 
-@media (prefers-color-scheme: dark) {
+.nav-fixed-parent {
+  display: none;
+  padding: .4rem .5rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
 
-  :root {
-    --color-text: #f5f5f7;
-    --color-muted: #a1a1a6;
-    --color-border: #3a3a3c;
-    --color-bg: #1c1c1e;
-    --color-meta: #6e6e73;
-    --color-accent: #7da6ff;
-  }
+.nav-fixed-parent-button {
+  all: unset;
+  display: block;
+  width: 100%;
+  padding: .35rem .6rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  cursor: pointer;
+}
 
-  .nav-pane {
-    background: rgba(255, 255, 255, 0.05);
-  }
-
-  .nav-pane button:hover {
-    background: rgba(255, 255, 255, 0.08);
-  }
-
-  .nav-item>button[aria-current="true"] {
-    background: rgba(255, 255, 255, 0.08);
-  }
-
-  .nav-item.active>button {
-    background: rgba(255, 255, 255, 0.16);
-    border-color: var(--color-accent);
-  }
-
-  .nav-item.active>button::before {
-    background: var(--color-accent);
-    opacity: 0.9;
-  }
-
-  .nav-scroll::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
+/* EINZIGES Sticky im System */
+body.nav-focus-mode .nav-fixed-parent {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 
 /* ========================================================= */
-/* 12. Navigation – Fokusmodus (SCOPE) */
+/* 12. Navigation – Fokusmodus (SCOPE)                       */
 /* ========================================================= */
 
 /*
-  Grundidee:
-  - Im SCOPE-Modus werden alle nicht relevanten Navigationseinträge ausgeblendet
-  - Sichtbar bleiben:
-    • das aktive nav-item
-    • dessen Button
-    • dessen direkte Children
-  - Es findet KEINE Layout- oder Scroll-Umbau-Logik im CSS statt
+  SCOPE-Modell (Patch 08):
+  - Tree bleibt vollständig erhalten
+  - Parent bleibt sichtbar (aber ohne Button)
+  - Fixed Parent übernimmt die Parent-Rolle
+  - Nur Leafs des aktiven Parents sind sichtbar
 */
 
-/* Alle ausgeblendeten Einträge entfernen */
-body.nav-focus-mode .nav-pane .nav-item.is-hidden {
+/* Nicht relevante Root-Branches ausblenden */
+body.nav-focus-mode .nav-item.is-hidden {
   display: none;
 }
 
-/* Aktiver Pfad bleibt vollständig sichtbar */
-body.nav-focus-mode .nav-item.active {
-  display: block;
+/* Parent-BUTTON ausblenden (nicht das Element!) */
+body.nav-focus-mode .nav-item.is-scope-parent>button {
+  display: none;
 }
 
-/* Gleichmäßiger Abstand für alle Nav-Items im SCOPE */
-body.nav-focus-mode .nav-item > button {
-  margin-bottom: 0.4rem; /* Platz ist immer da → kein Umsortieren */
+/* Default: keine Children sichtbar */
+body.nav-focus-mode .nav-item>.nav-children {
+  display: none;
 }
 
-/* Kinder des aktiven Elements */
-body.nav-focus-mode .nav-item.active>.nav-children {
+/* NUR Leafs des aktiven Parents */
+body.nav-focus-mode .nav-item.is-scope-parent>.nav-children {
   display: block;
-  margin-top: 0.2rem;
+  margin-top: .2rem;
 }
+
+/* Aktives Leaf klar hervorheben */
+body.nav-focus-mode .nav-item.is-scope-leaf.active>button {
+  background: #e5efff;
+  color: var(--color-accent);
+}
+
 
 /* ========================================================= */
-/* 13. ROOT-Exit – Meta-Navigation (nur im SCOPE sichtbar) */
+/* 13. ROOT-Exit                                             */
 /* ========================================================= */
 
-/* ROOT-Exit: standardmäßig unsichtbar */
 .nav-root-exit {
   display: none;
-  padding: 0.4rem 0.6rem;
+  padding: .4rem .6rem;
   border-bottom: 1px solid var(--color-border);
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
-
-/* Button bewusst unauffällig */
-.nav-root-button {
-  all: unset;
-  cursor: pointer;
-  color: var(--color-muted);
-  font-weight: 500;
-}
-
-.nav-root-button:hover {
-  color: var(--color-text);
-  text-decoration: underline;
-}
-
-/* ---------- SCOPE-MODUS ---------- */
 
 body.nav-focus-mode .nav-root-exit {
   display: block;
 }
 
-/* Navigation wird im SCOPE zweigeteilt */
-body.nav-focus-mode .nav-scroll {
-  display: flex;
-  flex-direction: column;
+.nav-root-button {
+  all: unset;
+  cursor: pointer;
+  color: var(--color-muted);
 }
 
-/* Parent fix sichtbar */
-body.nav-focus-mode .nav-item.active {
-  flex: 0 0 auto;
-}
-
-/* Children bekommen eigenen Scroll */
-body.nav-focus-mode .nav-item.active>.nav-children {
-  flex: 1 1 auto;
-  overflow-y: auto;
-  margin-top: 0.3rem;
-  padding-right: 0.25rem;
+.nav-root-button:hover {
+  text-decoration: underline;
 }
 
 
 /* ========================================================= */
-/* 14. DEV Dark / Light Mode – manueller Override */
+/* 14. DEV Dark / Light Mode                                 */
 /* ========================================================= */
 
 html.force-dark {
@@ -368,7 +280,6 @@ html.force-dark {
   --color-muted: #a1a1a6;
   --color-border: #3a3a3c;
   --color-bg: #1c1c1e;
-  --color-meta: #6e6e73;
   --color-accent: #7da6ff;
 }
 
@@ -377,24 +288,5 @@ html.force-light {
   --color-muted: #6e6e73;
   --color-border: #e5e5ea;
   --color-bg: #ffffff;
-  --color-meta: #8e8e93;
   --color-accent: #0a58ca;
-}
-
-.dev-tools {
-  padding: 0 1.5rem 0.75rem 1.5rem;
-}
-
-.dev-tools button {
-  font-size: 0.85rem;
-}
-
-/* DEV – Visual Debug */
-body[data-dev="true"] .dev-fixed-parent {
-  outline: 2px solid #7aa2f7;
-  outline-offset: -2px;
-}
-
-body[data-dev="true"] .dev-active-leaf {
-  background: rgba(158, 206, 106, 0.2);
 }

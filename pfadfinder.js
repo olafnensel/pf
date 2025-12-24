@@ -1,22 +1,19 @@
 /* ================================================================
-   PFADFINDER – NAVIGATION ARCHITEKTUR (REVIEW-BASELINE)
+   PFADFINDER – NAVIGATION ARCHITEKTUR
+   PATCH 08 – STABILES SCOPE-MODELL (KEIN DOM-REPARENTING)
    ================================================================ */
 
 /* =====================================================
-   DEV-GATE – zentrale Entwicklungs-Erkennung
+   DEV-GATE
    ===================================================== */
 
-/*
-  DEV ist aktiv, wenn:
-  <body data-dev="true"> gesetzt ist
-*/
 function isDevMode() {
   return document.body?.dataset?.dev === 'true';
 }
 
-/* ===================================================== */
-/* Navigation States */
-/* ===================================================== */
+/* =====================================================
+   Navigation States
+   ===================================================== */
 
 const NAV_STATE = {
   ROOT: 'root',
@@ -24,121 +21,160 @@ const NAV_STATE = {
 };
 
 let currentNavState = NAV_STATE.ROOT;
-
-/* Konsolidierte State-Daten */
 let currentActiveId = null;
-let currentFixedParentId = null;
+let currentScopeParent = null;
 
-/* ===================================================== */
-/* Helper-Funktionen */
-/* ===================================================== */
+/* =====================================================
+   Helper
+   ===================================================== */
 
-function qs(selector, root = document) {
-  return root.querySelector(selector);
+const qs = (s, r = document) => r.querySelector(s);
+const qsa = (s, r = document) => Array.from(r.querySelectorAll(s));
+
+/* =====================================================
+   Fixed Parent (Spiegel)
+   ===================================================== */
+
+const fixedParentEl = () => qs('.nav-fixed-parent');
+const fixedParentBtn = () => qs('.nav-fixed-parent-button');
+
+function showFixedParent(parentItem) {
+  const wrap = fixedParentEl();
+  const btn = fixedParentBtn();
+  if (!wrap || !btn || !parentItem) return;
+
+  const labelBtn = parentItem.querySelector('button');
+  btn.textContent = labelBtn.textContent.trim();
+  wrap.hidden = false;
 }
 
-function qsa(selector, root = document) {
-  return Array.from(root.querySelectorAll(selector));
+function hideFixedParent() {
+  const wrap = fixedParentEl();
+  if (wrap) wrap.hidden = true;
 }
 
-/* ===================================================== */
-/* ZENTRALER NAVIGATION-STATE-WECHSEL */
-/* ===================================================== */
+/* Klick auf Fixed Parent → ROOT */
+document.addEventListener('click', e => {
+  if (e.target.closest('.nav-fixed-parent-button')) {
+    enterRootMode();
+  }
+});
 
-function setNavState(nextState, reason = '') {
-  if (currentNavState === nextState) return;
+/* =====================================================
+   State Handling
+   ===================================================== */
+
+function setNavState(next, reason = '') {
+  if (currentNavState === next) return;
+
   const prev = currentNavState;
-  currentNavState = nextState;
-  PF_DEV.onStateChange(prev, nextState, reason, {
+  currentNavState = next;
+
+  PF_DEV.onStateChange(prev, next, reason, {
     activeId: currentActiveId,
-    fixedParentId: currentFixedParentId
+    scopeParent: currentScopeParent?.id || null
   });
 }
 
-/* ===================================================== */
-/* STATE → UI BINDING */
-/* ===================================================== */
-
 function applyNavState() {
+  document.body.classList.toggle(
+    'nav-focus-mode',
+    currentNavState === NAV_STATE.SCOPE
+  );
+
   if (currentNavState === NAV_STATE.ROOT) {
-    document.body.classList.remove('nav-focus-mode');
-  } else {
-    document.body.classList.add('nav-focus-mode');
+    hideFixedParent();
   }
 }
 
-/* ===================================================== */
-/* Navigation – Zustandswechsel */
-/* ===================================================== */
+/* =====================================================
+   ROOT MODE
+   ===================================================== */
 
 function enterRootMode() {
+  if (currentNavState === NAV_STATE.ROOT) return;
+
+  /* Alle Scope-Markierungen entfernen */
+  qsa('.nav-item').forEach(li => {
+    li.classList.remove(
+      'is-hidden',
+      'is-scope-parent',
+      'is-scope-leaf',
+      'active'
+    );
+  });
+
   currentActiveId = null;
-  currentFixedParentId = null;
+  currentScopeParent = null;
 
   setNavState(NAV_STATE.ROOT, 'enterRootMode');
   applyNavState();
 
-  qsa('.nav-item.is-hidden').forEach(el =>
-    el.classList.remove('is-hidden')
-  );
-
   const navScroll = qs('.nav-scroll');
-  if (navScroll) navScroll.scrollTo({ top: 0, behavior: 'smooth' });
+  if (navScroll) navScroll.scrollTop = 0;
 }
 
-function enterScopeMode(activeItem, activeId) {
-  if (!activeItem || !activeId) return;
+/* =====================================================
+   SCOPE MODE (KEIN DOM-UMBAU)
+   ===================================================== */
 
-  const parentItem = activeItem.parentElement.closest('.nav-item');
+function enterScopeMode(activeLeafItem, activeId) {
+  if (!activeLeafItem || !activeId) return;
+
+  const parentItem =
+    activeLeafItem.closest('.nav-children')?.closest('.nav-item');
   if (!parentItem) return;
 
-  /* =====================================================
-     PATCH M18 – Scope-Leaf-Wechsel explizit loggen
-     ===================================================== */
-
-  if (
-    isDevMode() &&
-    currentNavState === NAV_STATE.SCOPE &&
-    currentFixedParentId === (parentItem.id || null) &&
-    currentActiveId &&
-    currentActiveId !== activeId
-  ) {
-    console.log(
-      '%cSCOPE leaf change (same parent)',
-      'color:#9ece6a;font-weight:600'
-    );
-    console.log('from:', currentActiveId);
-    console.log('to:  ', activeId);
-  }
-
-  /* 🔒 EINZIGE Stelle für State-Daten */
   currentActiveId = activeId;
-  currentFixedParentId = parentItem.id || null;
+  currentScopeParent = parentItem;
 
-  setNavState(NAV_STATE.SCOPE, 'enterScopeMode');
-  applyNavState();
+  /* Reset aller Zustände */
+  qsa('.nav-item').forEach(li => {
+    li.classList.remove(
+      'is-hidden',
+      'is-scope-parent',
+      'is-scope-leaf',
+      'active'
+    );
+  });
 
-  qsa('.nav-item').forEach(item => {
-    if (item !== parentItem && !parentItem.contains(item)) {
-      item.classList.add('is-hidden');
+  /* Parent markieren */
+  parentItem.classList.add('is-scope-parent');
+
+  /* Alle direkten Leafs markieren */
+  qsa(':scope > .nav-children > .nav-item', parentItem).forEach(li => {
+    li.classList.add('is-scope-leaf');
+  });
+
+  /* Aktives Leaf */
+  activeLeafItem.classList.add('active');
+
+  /* Alles außerhalb des Scopes ausblenden */
+  qsa('.nav-item').forEach(li => {
+    if (li !== parentItem && !parentItem.contains(li)) {
+      li.classList.add('is-hidden');
     }
   });
 
-  const navScroll = qs('.nav-scroll');
-  if (navScroll) navScroll.scrollTop = parentItem.offsetTop;
+  showFixedParent(parentItem);
+
+  setNavState(NAV_STATE.SCOPE, 'enterScopeMode');
+  applyNavState();
 }
 
-/* ===================================================== */
-/* ZENTRALER CLICK-HANDLER */
-/* ===================================================== */
+/* =====================================================
+   CLICK HANDLER
+   ===================================================== */
 
 document.addEventListener('click', e => {
 
+  /* ROOT-Exit */
   if (e.target.closest('.nav-root-button')) {
     enterRootMode();
     return;
   }
 
+  /* Parent Toggle (ROOT) */
   const navBtn = e.target.closest('button[data-nav]');
   if (navBtn) {
     const li = navBtn.closest('.nav-item');
@@ -146,8 +182,8 @@ document.addEventListener('click', e => {
     qsa('.nav-item.open').forEach(el => {
       if (el !== li) {
         el.classList.remove('open');
-        const btn = qs('button[data-nav]', el);
-        if (btn) btn.setAttribute('aria-expanded', 'false');
+        const b = qs('button[data-nav]', el);
+        if (b) b.setAttribute('aria-expanded', 'false');
       }
     });
 
@@ -158,9 +194,11 @@ document.addEventListener('click', e => {
     return;
   }
 
+  /* Leaf */
   const colBtn = e.target.closest('button[data-col]');
   if (colBtn) {
     const activeId = colBtn.getAttribute('data-col');
+    const li = colBtn.closest('.nav-item');
 
     qsa('.collection-section.active').forEach(el =>
       el.classList.remove('active')
@@ -169,20 +207,13 @@ document.addEventListener('click', e => {
     const target = document.getElementById(activeId);
     if (target) target.classList.add('active');
 
-    qsa('.nav-item.active').forEach(el =>
-      el.classList.remove('active')
-    );
-
-    const li = colBtn.closest('.nav-item');
-    if (li) li.classList.add('active');
-
     enterScopeMode(li, activeId);
   }
 });
 
-/* ===================================================== */
-/* ESC → ROOT */
-/* ===================================================== */
+/* =====================================================
+   ESC → ROOT
+   ===================================================== */
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && currentNavState === NAV_STATE.SCOPE) {
@@ -191,106 +222,26 @@ document.addEventListener('keydown', e => {
 });
 
 /* =====================================================
-   PATCH 02 – DEV tools (gebündelt)
+   DEV TOOLS
    ===================================================== */
 
 const PF_DEV = (function () {
 
-  function isEnabled() {
+  function enabled() {
     return document.body?.dataset?.dev === 'true';
   }
 
-  /* ---------- Logging ---------- */
+  function onStateChange(from, to, reason, data) {
+    if (!enabled()) return;
 
-  function logStateChange(from, to, reason) {
-    if (!isEnabled()) return;
     console.groupCollapsed(
       `%cNAV STATE: ${from} → ${to}`,
       'color:#7aa2f7;font-weight:600'
     );
-    if (reason) console.log('reason:', reason);
+    console.log('reason:', reason);
+    console.log(data);
     console.groupEnd();
   }
-
-  /* ---------- Invariants ---------- */
-
-  function checkInvariants(state, data) {
-    if (!isEnabled()) return;
-
-    if (state === 'root') {
-      if (data.activeId || data.fixedParentId) {
-        console.warn('NAV INVARIANT (ROOT) violated', data);
-      }
-    }
-
-    if (state === 'scope') {
-      if (!data.activeId || !data.fixedParentId) {
-        console.warn('NAV INVARIANT (SCOPE) violated', data);
-      }
-    }
-  }
-
-  /* ---------- Debug Overlay ---------- */
-
-  let overlay;
-
-  function ensureOverlay() {
-    if (!isEnabled()) return;
-    if (overlay) return;
-
-    overlay = document.createElement('div');
-    overlay.style.cssText = `
-      position:fixed;
-      bottom:.5rem;
-      left:.5rem;
-      z-index:9999;
-      font:12px monospace;
-      background:rgba(0,0,0,.75);
-      color:#0f0;
-      padding:.4rem .6rem;
-      border-radius:4px;
-      pointer-events:none;
-    `;
-    document.body.appendChild(overlay);
-  }
-
-  function renderOverlay(state, data) {
-    if (!isEnabled()) return;
-    ensureOverlay();
-    overlay.innerHTML = `
-      <div>NAV_STATE: <b>${state}</b></div>
-      <div>activeId: <b>${data.activeId || '–'}</b></div>
-      <div>fixedParent: <b>${data.fixedParentId || '–'}</b></div>
-    `;
-  }
-
-  /* ---------- Dark Mode (DEV) ---------- */
-
-  function setupDarkToggle() {
-    if (!isEnabled()) return;
-
-    document.addEventListener('click', e => {
-      const btn = e.target.closest('.dev-dark-toggle');
-      if (!btn) return;
-
-      const html = document.documentElement;
-      const isDark = html.classList.contains('force-dark');
-
-      html.classList.toggle('force-dark', !isDark);
-      html.classList.toggle('force-light', isDark);
-      btn.textContent = isDark ? 'DEV Dark Mode' : 'DEV Light Mode';
-    });
-  }
-
-  /* ---------- Public API ---------- */
-
-  function onStateChange(prev, next, reason, data) {
-    logStateChange(prev, next, reason);
-    checkInvariants(next, data);
-    renderOverlay(next, data);
-  }
-
-  document.addEventListener('DOMContentLoaded', setupDarkToggle);
 
   return { onStateChange };
 })();
