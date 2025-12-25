@@ -137,7 +137,6 @@ nav li {
   width: 100%;
   box-sizing: border-box;
 
-  /* EINZIGE Quelle für linke/rechte Hit-Area */
   padding: .3rem var(--nav-hit-padding-x);
   line-height: 1.25;
 
@@ -154,8 +153,10 @@ nav li {
 /* 9. Navigation – Zustände                                  */
 /* ========================================================= */
 
+
 /* --------------------------------------------------------- */
-/* Aktives Leaf (ROOT + SCOPE)                               */
+/* COMMON: Aktives Leaf (ROOT + SCOPE)                       */
+/* → echte Selektion = Blau                                 */
 /* --------------------------------------------------------- */
 
 .nav-item.active>button {
@@ -165,41 +166,34 @@ nav li {
 
 
 /* --------------------------------------------------------- */
-/* Root-Leaves: aria-current (Fallback)                      */
+/* ROOT-MODE: Root-Leaf aktiv                                */
+/* → Content-Wechsel auf Root-Ebene                          */
 /* --------------------------------------------------------- */
 
-.nav-pane>nav>ul>.nav-item>button[aria-current="true"] {
+body:not(.nav-focus-mode) .nav-pane .nav-scroll nav>ul>.nav-item.is-root-current:not(.has-children)>button {
   background: #e5efff;
   color: var(--color-accent);
+  font-weight: 600;
 }
 
 
 /* --------------------------------------------------------- */
-/* Root-Current (NEU)                                        */
-/* Persistenter Einstiegspunkt in den letzten Scope          */
-/* NUR im ROOT-Mode sichtbar                                 */
+/* ROOT-MODE: Root-Parent aktiv                              */
+/* → Orientierung, kein Content-Wechsel                      */
 /* --------------------------------------------------------- */
 
-body:not(.nav-focus-mode) .nav-pane .nav-scroll nav>ul>.nav-item.is-root-current>button {
+body:not(.nav-focus-mode) .nav-pane .nav-scroll nav>ul>.nav-item.is-root-current.has-children>button {
   background: rgba(0, 0, 0, .06);
   font-weight: 600;
 }
 
+
 /* --------------------------------------------------------- */
-/* Root-Active (nur während aktivem Scope)                   */
+/* SCOPE-MODE: Root-Active (temporär)                        */
 /* --------------------------------------------------------- */
 
 body.nav-focus-mode .nav-pane>nav>ul>.nav-item.is-root-active>button {
   background: rgba(0, 0, 0, .08);
-}
-
-
-/* --------------------------------------------------------- */
-/* Root-Parents & Root-Leaves gleich gewichten               */
-/* --------------------------------------------------------- */
-
-.nav-pane>nav>ul>.nav-item>button {
-  font-weight: 500;
 }
 
 
@@ -330,11 +324,6 @@ body.nav-focus-mode .nav-item>.nav-children {
 
 body.nav-focus-mode .nav-item.is-scope-parent>.nav-children {
   display: block;
-}
-
-body.nav-focus-mode .nav-item.is-scope-leaf.active>button {
-  background: #e5efff;
-  color: var(--color-accent);
 }
 
 
