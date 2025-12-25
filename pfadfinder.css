@@ -1,10 +1,11 @@
 /* ========================================================= */
 /* Pfadfinder – Basis-CSS (FINAL, konsolidiert)              */
+/* Version: PF-0.12                                          */
 /* ========================================================= */
 
 
 /* ========================================================= */
-/* 1. Root – Farben, Typografie, Geometrie                   */
+/* 1. ROOT – Farben, Typografie, Geometrie                   */
 /* ========================================================= */
 
 :root {
@@ -26,13 +27,16 @@
 
   --header-height: 6.5rem;
 
-  /* einheitliche Hit-Area für alle Nav-Buttons */
+  /* Einheitliche Klick- & Highlight-Zone */
   --nav-hit-padding-x: .75rem;
 }
 
 
+/* ======================= END 1 ============================ */
+
+
 /* ========================================================= */
-/* 2. Globaler Layoutkontext                                 */
+/* 2. GLOBALER LAYOUTKONTEXT                                 */
 /* ========================================================= */
 
 html,
@@ -54,8 +58,11 @@ body {
 }
 
 
+/* ======================= END 2 ============================ */
+
+
 /* ========================================================= */
-/* 3. Header                                                 */
+/* 3. HEADER                                                 */
 /* ========================================================= */
 
 h1 {
@@ -68,8 +75,11 @@ h1 {
 }
 
 
+/* ======================= END 3 ============================ */
+
+
 /* ========================================================= */
-/* 4. Hauptlayout                                            */
+/* 4. HAUPTLAYOUT                                            */
 /* ========================================================= */
 
 .layout {
@@ -81,8 +91,11 @@ h1 {
 }
 
 
+/* ======================= END 4 ============================ */
+
+
 /* ========================================================= */
-/* 5. Navigation – Container                                 */
+/* 5. NAVIGATION – CONTAINER                                 */
 /* ========================================================= */
 
 .nav-pane {
@@ -90,27 +103,34 @@ h1 {
   max-width: 260px;
   display: flex;
   flex-direction: column;
+
   background: rgba(0, 0, 0, .03);
   border-radius: 10px;
   overflow: hidden;
 }
 
 
+/* ======================= END 5 ============================ */
+
+
 /* ========================================================= */
-/* 6. Navigation – Scrollbereich (ROOT + SCOPE)              */
+/* 6. NAVIGATION – SCROLLBEREICH                              */
 /* ========================================================= */
 
 .nav-scroll {
   flex: 1 1 auto;
   overflow-y: auto;
 
-  /* visuelle Ruhe: Highlight klebt nicht am Rand */
+  /* Visuelle Ruhe: Highlight klebt nicht am Rand */
   padding: 0 .5rem;
 }
 
 
+/* ======================= END 6 ============================ */
+
+
 /* ========================================================= */
-/* 7. Navigation – Struktur                                  */
+/* 7. NAVIGATION – STRUKTUR                                  */
 /* ========================================================= */
 
 nav ul {
@@ -124,8 +144,11 @@ nav li {
 }
 
 
+/* ======================= END 7 ============================ */
+
+
 /* ========================================================= */
-/* 8. Navigation – Buttons (Grundgeometrie)                  */
+/* 8. NAVIGATION – BUTTON-GEOMETRIE                           */
 /* ========================================================= */
 
 .nav-pane button {
@@ -149,69 +172,78 @@ nav li {
 }
 
 
+/* ======================= END 8 ============================ */
+
+
 /* ========================================================= */
 /* 9. Navigation – Zustände                                  */
 /* ========================================================= */
-
+/* BEGIN SECTION 9 ========================================= */
 
 /* --------------------------------------------------------- */
-/* COMMON: Aktives Leaf (ROOT + SCOPE)                       */
-/* → echte Selektion = Blau                                 */
+/* 9.1 Grundfarben                                           */
 /* --------------------------------------------------------- */
 
-.nav-item.active>button {
-  background: #e5efff;
-  color: var(--color-accent);
+:root {
+  --nav-active-bg: #e5efff;
+  /* Blau – aktives Ziel */
+  --nav-context-bg: rgba(0, 0, 0, 0.06);
+  /* Grau – Kontext */
+  --nav-active-color: var(--color-accent);
 }
 
-
 /* --------------------------------------------------------- */
-/* ROOT-MODE: Root-Leaf aktiv                                */
-/* → Content-Wechsel auf Root-Ebene                          */
+/* 9.2 ROOT-MODE – Root-Current (persistent)                 */
 /* --------------------------------------------------------- */
 
-body:not(.nav-focus-mode) .nav-pane .nav-scroll nav>ul>.nav-item.is-root-current:not(.has-children)>button {
-  background: #e5efff;
-  color: var(--color-accent);
+/* Root-Parent = Kontext → Grau */
+body:not(.nav-focus-mode) .nav-item.is-root-current:not(.is-root-leaf)>button {
+  background: var(--nav-context-bg);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+/* Root-Leaf = aktives Ziel → Blau */
+body:not(.nav-focus-mode) .nav-item.is-root-current.is-root-leaf>button {
+  background: var(--nav-active-bg);
+  color: var(--nav-active-color);
   font-weight: 600;
 }
 
-
 /* --------------------------------------------------------- */
-/* ROOT-MODE: Root-Parent aktiv                              */
-/* → Orientierung, kein Content-Wechsel                      */
+/* 9.3 SCOPE-MODE – Scope-Parent & Scope-Leaf                */
 /* --------------------------------------------------------- */
 
-body:not(.nav-focus-mode) .nav-pane .nav-scroll nav>ul>.nav-item.is-root-current.has-children>button {
-  background: rgba(0, 0, 0, .06);
+/* Scope-Parent = Kontext → Grau */
+body.nav-focus-mode .nav-item.is-scope-parent>button {
+  background: var(--nav-context-bg);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+/* Aktives Scope-Leaf = Ziel → Blau */
+body.nav-focus-mode .nav-item.is-scope-leaf.active>button {
+  background: var(--nav-active-bg);
+  color: var(--nav-active-color);
   font-weight: 600;
 }
 
-
 /* --------------------------------------------------------- */
-/* SCOPE-MODE: Root-Active (temporär)                        */
+/* 9.4 Hover (nicht aktiv)                                   */
 /* --------------------------------------------------------- */
 
-body.nav-focus-mode .nav-pane>nav>ul>.nav-item.is-root-active>button {
-  background: rgba(0, 0, 0, .08);
+.nav-pane button:hover:not(.active) {
+  background: rgba(0, 0, 0, 0.04);
 }
 
-
-/* --------------------------------------------------------- */
-/* Level 2+ – visuelle Einrückung (nur links)                */
-/* --------------------------------------------------------- */
-
-.nav-item .nav-item>button {
-  padding-left: calc(var(--nav-hit-padding-x) + .75rem);
-}
+/* END SECTION 9 =========================================== */
 
 
 /* ========================================================= */
-/* 10. Einheitliche Button-Struktur (Icon + Label)           */
+/* 10. ICON + LABEL (INHALTLICHE STRUKTUR)                   */
 /* ========================================================= */
 
 .nav-pane .nav-icon {
-  display: inline-block;
   width: 1ch;
   flex: 0 0 1ch;
   text-align: center;
@@ -222,30 +254,44 @@ body.nav-focus-mode .nav-pane>nav>ul>.nav-item.is-root-active>button {
 }
 
 
+/* --------------------------------------------------------- */
+/* Hierarchie-Einrückung: NUR Label, nie Button              */
+/* --------------------------------------------------------- */
+
+.nav-item .nav-item>button .nav-label {
+  padding-left: .75rem;
+}
+
+
+/* ======================= END 10 =========================== */
+
+
 /* ========================================================= */
-/* 11. Parent-Buttons (Chevron)                              */
+/* 11. PARENT-BUTTONS (CHEVRON)                              */
 /* ========================================================= */
 
 .nav-toggle {
   padding-left: calc(var(--nav-hit-padding-x) + 1ch + 0.6em);
   padding-right: var(--nav-hit-padding-x);
-  font-weight: 500;
 }
 
 .nav-toggle>.nav-icon::before {
   content: '›';
   opacity: 0.6;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  transition: transform .15s ease, opacity .15s ease;
 }
 
 .nav-toggle[aria-expanded="true"]>.nav-icon::before {
   transform: rotate(90deg);
-  opacity: 0.9;
+  opacity: .9;
 }
 
 
+/* ======================= END 11 =========================== */
+
+
 /* ========================================================= */
-/* 12. Navigation – Aufklappen (ROOT)                        */
+/* 12. ROOT-MODE – AUFKLAPPEN                                */
 /* ========================================================= */
 
 .nav-item>.nav-children {
@@ -258,8 +304,11 @@ body.nav-focus-mode .nav-pane>nav>ul>.nav-item.is-root-active>button {
 }
 
 
+/* ======================= END 12 =========================== */
+
+
 /* ========================================================= */
-/* 13. Content                                               */
+/* 13. CONTENT                                               */
 /* ========================================================= */
 
 main {
@@ -269,8 +318,11 @@ main {
 }
 
 
+/* ======================= END 13 =========================== */
+
+
 /* ========================================================= */
-/* 14. Fixed Parent (SCOPE – Spiegel)                        */
+/* 14. FIXED PARENT (SCOPE-MODE)                             */
 /* ========================================================= */
 
 .nav-fixed-parent {
@@ -286,10 +338,7 @@ main {
   width: 100%;
   padding: .35rem var(--nav-hit-padding-x);
 
-  font-size: 1.05em;
   font-weight: 600;
-  letter-spacing: .01em;
-
   color: var(--color-accent);
   cursor: pointer;
 }
@@ -300,18 +349,15 @@ body.nav-focus-mode .nav-fixed-parent {
 }
 
 
+/* ======================= END 14 =========================== */
+
+
 /* ========================================================= */
-/* 15. Navigation – Fokusmodus (SCOPE)                       */
+/* 15. NAVIGATION – SCOPE-MODE                               */
 /* ========================================================= */
 
 body.nav-focus-mode .nav-item.is-hidden {
   display: none;
-}
-
-body.nav-focus-mode .nav-scroll {
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow-y: auto;
 }
 
 body.nav-focus-mode .nav-item.is-scope-parent>button {
@@ -327,8 +373,11 @@ body.nav-focus-mode .nav-item.is-scope-parent>.nav-children {
 }
 
 
+/* ======================= END 15 =========================== */
+
+
 /* ========================================================= */
-/* 16. ROOT-Exit                                             */
+/* 16. ROOT-EXIT                                             */
 /* ========================================================= */
 
 .nav-root-exit {
@@ -353,8 +402,11 @@ body.nav-focus-mode .nav-root-exit {
 }
 
 
+/* ======================= END 16 =========================== */
+
+
 /* ========================================================= */
-/* 17. DEV Dark / Light Mode                                 */
+/* 17. DEV DARK / LIGHT MODE                                 */
 /* ========================================================= */
 
 html.force-dark {
@@ -365,42 +417,34 @@ html.force-dark {
   --color-accent: #7da6ff;
 }
 
-html.force-light {
-  --color-text: #1d1d1f;
-  --color-muted: #6e6e73;
-  --color-border: #e5e5ea;
-  --color-bg: #ffffff;
-  --color-accent: #0a58ca;
-}
+
+/* ======================= END 17 =========================== */
 
 
 /* ========================================================= */
-/* 18. DEV Tools                                             */
+/* 18. DEV TOOLS                                             */
 /* ========================================================= */
 
 .dev-tools {
-  padding: 0 1.5rem 0.75rem 1.5rem;
+  padding: 0 1.5rem .75rem;
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  gap: .75rem;
 }
 
 .dev-dark-toggle {
   all: unset;
-  font-size: 0.8rem;
-  padding: 0.25rem 0.6rem;
+  font-size: .8rem;
+  padding: .25rem .6rem;
   border-radius: 6px;
   cursor: pointer;
 
   color: var(--color-muted);
-  background: rgba(0, 0, 0, 0.05);
-}
-
-html.force-dark .dev-dark-toggle {
-  background: rgba(255, 255, 255, 0.12);
-  color: var(--color-text);
+  background: rgba(0, 0, 0, .05);
 }
 
 .dev-dark-toggle:hover {
   text-decoration: underline;
 }
+
+
+/* ======================= END 18 =========================== */

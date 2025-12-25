@@ -1,19 +1,22 @@
-/* ================================================================
+/* ======================================================================
    PFADFINDER – NAVIGATION ARCHITEKTUR
-   PATCH 08 – STABILES SCOPE-MODELL (KEIN DOM-REPARENTING)
-   ================================================================ */
+   PATCH 12 – ROOT-CURRENT & ROOT-LEAF STATE
+   ====================================================================== */
 
-/* =====================================================
-   DEV-GATE
-   ===================================================== */
+/* ======================================================================
+   [BLOCK 1] DEV-GATE
+   ====================================================================== */
 
 function isDevMode() {
   return document.body?.dataset?.dev === 'true';
 }
 
-/* =====================================================
-   Navigation States
-   ===================================================== */
+/* ============================ END BLOCK 1 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 2] NAVIGATION STATES
+   ====================================================================== */
 
 const NAV_STATE = {
   ROOT: 'root',
@@ -24,16 +27,22 @@ let currentNavState = NAV_STATE.ROOT;
 let currentActiveId = null;
 let currentScopeParent = null;
 
-/* =====================================================
-   Helper
-   ===================================================== */
+/* ============================ END BLOCK 2 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 3] DOM HELPERS
+   ====================================================================== */
 
 const qs = (s, r = document) => r.querySelector(s);
 const qsa = (s, r = document) => Array.from(r.querySelectorAll(s));
 
-/* =====================================================
-   Fixed Parent (Spiegel)
-   ===================================================== */
+/* ============================ END BLOCK 3 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 4] FIXED PARENT (SCOPE MIRROR)
+   ====================================================================== */
 
 const fixedParentEl = () => qs('.nav-fixed-parent');
 const fixedParentBtn = () => qs('.nav-fixed-parent-button');
@@ -60,9 +69,12 @@ document.addEventListener('click', e => {
   }
 });
 
-/* =====================================================
-   State Handling
-   ===================================================== */
+/* ============================ END BLOCK 4 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 5] STATE HANDLING
+   ====================================================================== */
 
 function setNavState(next, reason = '') {
   if (currentNavState === next) return;
@@ -87,16 +99,25 @@ function applyNavState() {
   }
 }
 
-/* =====================================================
-   ROOT MODE
-   ===================================================== */
+/* ============================ END BLOCK 5 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 6] ROOT MODE
+   ====================================================================== */
 
 function enterRootMode() {
-  if (currentNavState === NAV_STATE.ROOT) return;
 
-  /* Alle Scope-Markierungen entfernen */
+  /* Scope-spezifische Markierungen entfernen */
   qsa('.nav-item.is-root-active')
     .forEach(li => li.classList.remove('is-root-active'));
+
+  qsa('.nav-item.is-scope-parent, .nav-item.is-scope-leaf, .nav-item.active')
+    .forEach(li => li.classList.remove(
+      'is-scope-parent',
+      'is-scope-leaf',
+      'active'
+    ));
 
   currentActiveId = null;
   currentScopeParent = null;
@@ -108,9 +129,12 @@ function enterRootMode() {
   if (navScroll) navScroll.scrollTop = 0;
 }
 
-/* =====================================================
-   SCOPE MODE (KEIN DOM-UMBAU)
-   ===================================================== */
+/* ============================ END BLOCK 6 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 7] SCOPE MODE (NO DOM RE-PARENTING)
+   ====================================================================== */
 
 function enterScopeMode(activeLeafItem, activeId) {
   if (!activeLeafItem || !activeId) return;
@@ -124,7 +148,7 @@ function enterScopeMode(activeLeafItem, activeId) {
     .forEach(li => li.classList.remove('is-root-current'));
   parentItem.classList.add('is-root-current');
 
-  /* Root-Active (nur für aktuellen Scope) */
+  /* Root-Active (Scope-spezifisch) */
   parentItem.classList.add('is-root-active');
 
   currentActiveId = activeId;
@@ -144,9 +168,8 @@ function enterScopeMode(activeLeafItem, activeId) {
   parentItem.classList.add('is-scope-parent');
 
   /* Alle direkten Leafs markieren */
-  qsa(':scope > .nav-children > .nav-item', parentItem).forEach(li => {
-    li.classList.add('is-scope-leaf');
-  });
+  qsa(':scope > .nav-children > .nav-item', parentItem)
+    .forEach(li => li.classList.add('is-scope-leaf'));
 
   /* Aktives Leaf */
   activeLeafItem.classList.add('active');
@@ -164,27 +187,35 @@ function enterScopeMode(activeLeafItem, activeId) {
   applyNavState();
 }
 
-/* =====================================================
-   CLICK HANDLER
-   ===================================================== */
+/* ============================ END BLOCK 7 ============================ */
+
+/* ======================================================================
+   [BLOCK 8] CLICK HANDLER (ROOT + SCOPE LOGIC)
+   ====================================================================== */
 
 document.addEventListener('click', e => {
 
-  /* ROOT-Exit */
+  /* --------------------------------------------------------------
+     ROOT-EXIT
+     -------------------------------------------------------------- */
   if (e.target.closest('.nav-root-button')) {
     enterRootMode();
     return;
   }
 
-  /* Parent Toggle (ROOT) */
+  /* --------------------------------------------------------------
+     ROOT-PARENT (Toggle)
+     -------------------------------------------------------------- */
   const navBtn = e.target.closest('button[data-nav]');
   if (navBtn) {
     const li = navBtn.closest('.nav-item');
 
-    /* 👉 Root-Current setzen */
+    /* Root-Current neu setzen */
     qsa('.nav-item.is-root-current')
-      .forEach(el => el.classList.remove('is-root-current'));
+      .forEach(el => el.classList.remove('is-root-current', 'is-root-leaf'));
+
     li.classList.add('is-root-current');
+    li.classList.remove('is-root-leaf'); // Parent ≠ Leaf
 
     /* andere Parents schließen */
     qsa('.nav-item.open').forEach(el => {
@@ -202,37 +233,53 @@ document.addEventListener('click', e => {
     return;
   }
 
-  /* Leaf */
+  /* --------------------------------------------------------------
+     LEAF (ROOT oder SCOPE)
+     -------------------------------------------------------------- */
   const colBtn = e.target.closest('button[data-col]');
   if (colBtn) {
     const activeId = colBtn.getAttribute('data-col');
     const li = colBtn.closest('.nav-item');
 
-    /* Root-Current IMMER setzen */
+    /* Root-Current immer eindeutig setzen */
     qsa('.nav-item.is-root-current')
-      .forEach(el => el.classList.remove('is-root-current'));
+      .forEach(el => el.classList.remove('is-root-current', 'is-root-leaf'));
+
     li.classList.add('is-root-current');
 
+    /* ROOT-LEAF explizit markieren */
+    const hasParent = li.closest('.nav-children');
+    if (!hasParent) {
+      li.classList.add('is-root-leaf');
+    }
+
+    /* aktives Ziel */
+    qsa('.nav-item.active')
+      .forEach(el => el.classList.remove('active'));
+    li.classList.add('active');
+
+    /* Content wechseln */
     qsa('.collection-section.active')
       .forEach(el => el.classList.remove('active'));
 
     const target = document.getElementById(activeId);
     if (target) target.classList.add('active');
 
-    /* Scope nur, wenn Parent existiert */
-    const hasParent = li.closest('.nav-children');
+    /* Scope nur bei echten Child-Leafs */
     if (hasParent) {
       enterScopeMode(li, activeId);
     } else {
-      /* Root-Leaf → ROOT-Mode */
-      enterRootMode();
+      setNavState(NAV_STATE.ROOT, 'root-leaf-click');
+      applyNavState();
     }
   }
 });
 
-/* =====================================================
-   ESC → ROOT
-   ===================================================== */
+/* ============================ END BLOCK 8 ============================ */
+
+/* ======================================================================
+   [BLOCK 9] ESC → ROOT
+   ====================================================================== */
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && currentNavState === NAV_STATE.SCOPE) {
@@ -240,14 +287,16 @@ document.addEventListener('keydown', e => {
   }
 });
 
-/* =====================================================
-   PATCH N3 – DEV Dark Mode Toggle (Safari-safe)
-   ===================================================== */
+/* ============================ END BLOCK 9 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 10] DEV DARK MODE TOGGLE
+   ====================================================================== */
 
 (function setupDevDarkModeToggle() {
 
-  // Nur im DEV-Modus
-  if (document.body?.dataset?.dev !== 'true') return;
+  if (!isDevMode()) return;
 
   document.addEventListener('click', e => {
     const btn = e.target.closest('.dev-dark-toggle');
@@ -256,15 +305,12 @@ document.addEventListener('keydown', e => {
     const html = document.documentElement;
     const isDark = html.classList.contains('force-dark');
 
-    if (isDark) {
-      html.classList.remove('force-dark');
-      html.classList.add('force-light');
-      btn.textContent = 'DEV Dark Mode';
-    } else {
-      html.classList.add('force-dark');
-      html.classList.remove('force-light');
-      btn.textContent = 'DEV Light Mode';
-    }
+    html.classList.toggle('force-dark', !isDark);
+    html.classList.toggle('force-light', isDark);
+
+    btn.textContent = isDark
+      ? 'DEV Dark Mode'
+      : 'DEV Light Mode';
 
     console.log(
       `%cDEV Dark Mode ${!isDark ? 'ON' : 'OFF'}`,
@@ -274,14 +320,17 @@ document.addEventListener('keydown', e => {
 
 })();
 
-/* =====================================================
-   DEV TOOLS
-   ===================================================== */
+/* ============================ END BLOCK 10 ============================ */
+
+
+/* ======================================================================
+   [BLOCK 11] DEV TOOLS
+   ====================================================================== */
 
 const PF_DEV = (function () {
 
   function enabled() {
-    return document.body?.dataset?.dev === 'true';
+    return isDevMode();
   }
 
   function onStateChange(from, to, reason, data) {
@@ -298,3 +347,5 @@ const PF_DEV = (function () {
 
   return { onStateChange };
 })();
+
+/* ============================ END BLOCK 11 ============================ */
