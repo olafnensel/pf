@@ -95,14 +95,8 @@ function enterRootMode() {
   if (currentNavState === NAV_STATE.ROOT) return;
 
   /* Alle Scope-Markierungen entfernen */
-  qsa('.nav-item').forEach(li => {
-    li.classList.remove(
-      'is-hidden',
-      'is-scope-parent',
-      'is-scope-leaf',
-      'active'
-    );
-  });
+  qsa('.nav-item.is-root-active')
+    .forEach(li => li.classList.remove('is-root-active'));
 
   currentActiveId = null;
   currentScopeParent = null;
@@ -125,10 +119,18 @@ function enterScopeMode(activeLeafItem, activeId) {
     activeLeafItem.closest('.nav-children')?.closest('.nav-item');
   if (!parentItem) return;
 
+  /* Root-Current (persistent, genau einer) */
+  qsa('.nav-item.is-root-current')
+    .forEach(li => li.classList.remove('is-root-current'));
+  parentItem.classList.add('is-root-current');
+
+  /* Root-Active (nur für aktuellen Scope) */
+  parentItem.classList.add('is-root-active');
+
   currentActiveId = activeId;
   currentScopeParent = parentItem;
 
-  /* Reset aller Zustände */
+  /* temporäre Zustände zurücksetzen */
   qsa('.nav-item').forEach(li => {
     li.classList.remove(
       'is-hidden',
@@ -179,6 +181,12 @@ document.addEventListener('click', e => {
   if (navBtn) {
     const li = navBtn.closest('.nav-item');
 
+    /* 👉 Root-Current setzen */
+    qsa('.nav-item.is-root-current')
+      .forEach(el => el.classList.remove('is-root-current'));
+    li.classList.add('is-root-current');
+
+    /* andere Parents schließen */
     qsa('.nav-item.open').forEach(el => {
       if (el !== li) {
         el.classList.remove('open');
@@ -200,14 +208,25 @@ document.addEventListener('click', e => {
     const activeId = colBtn.getAttribute('data-col');
     const li = colBtn.closest('.nav-item');
 
-    qsa('.collection-section.active').forEach(el =>
-      el.classList.remove('active')
-    );
+    /* Root-Current IMMER setzen */
+    qsa('.nav-item.is-root-current')
+      .forEach(el => el.classList.remove('is-root-current'));
+    li.classList.add('is-root-current');
+
+    qsa('.collection-section.active')
+      .forEach(el => el.classList.remove('active'));
 
     const target = document.getElementById(activeId);
     if (target) target.classList.add('active');
 
-    enterScopeMode(li, activeId);
+    /* Scope nur, wenn Parent existiert */
+    const hasParent = li.closest('.nav-children');
+    if (hasParent) {
+      enterScopeMode(li, activeId);
+    } else {
+      /* Root-Leaf → ROOT-Mode */
+      enterRootMode();
+    }
   }
 });
 
